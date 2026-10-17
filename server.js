@@ -10,6 +10,9 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const SESSION_SECRET = process.env.SESSION_SECRET || 'dino4vn_steam_auth_secret_key_2026';
 
+// Cho phép nhận diện đúng IP và giao thức HTTPS khi chạy sau Tunnel / Proxy
+app.set('trust proxy', 1);
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -20,19 +23,16 @@ app.use(session({
     saveUninitialized: false,
     cookie: {
         httpOnly: true,
-        secure: process.env.NODE_ENV === 'production' && process.env.BASE_URL?.startsWith('https'),
+        secure: 'auto',
         maxAge: 30 * 24 * 60 * 60 * 1000 // 30 days
     }
 }));
 
-// Determine Base URL dynamically or from environment
+// Determine Base URL dynamically: tự động nhận diện cả localhost lẫn domain Cloudflare Tunnel
 function getBaseUrl(req) {
-    if (process.env.BASE_URL && process.env.BASE_URL.trim()) {
-        return process.env.BASE_URL.trim().replace(/\/+$/, '');
-    }
-    const protocol = req.headers['x-forwarded-proto'] || req.protocol || 'http';
+    const proto = req.headers['x-forwarded-proto'] || req.protocol || 'http';
     const host = req.headers['x-forwarded-host'] || req.get('host') || `localhost:${PORT}`;
-    return `${protocol}://${host}`;
+    return `${proto}://${host}`;
 }
 
 // ── 1. Khởi động đăng nhập Steam ─────────────────────────────────────────────
@@ -352,15 +352,68 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(webDir, 'index.html'));
 });
 
+// ── 8. Tự động đồng bộ số liệu người chơi & BXH từ SequenceMods ────────────────
+async function syncSequenceMods() {
+    try {
+        const headers = { 'User-Agent': 'Mozilla/5.0' };
+        let status_raw = { ok: true, server: 'Rong Viet', online: true };
+        try {
+            const r = await fetch('https://rongviet.sequencemods.com/api/status', { headers, signal: AbortSignal.timeout(6000) });
+            if (r.ok) status_raw = await r.json();
+        } catch (e) {}
+
+        const species_counts = {};
+        try {
+            const r = await fetch('https://rongviet.sequencemods.com/api/killfeed?limit=50', { headers, signal: AbortSignal.timeout(6000) });
+            if (r.ok) {
+                const kf = await r.json();
+                const ignore = new Set(['Deer', 'Boar', 'Rabbit', 'Goat', 'Frog', 'Fish', '']);
+                for (const row of (kf.rows || [])) {
+                    if (row.victim_species && !ignore.has(row.victim_species)) species_counts[row.victim_species] = (species_counts[row.victim_species] || 0) + 1;
+                    if (row.killer_species && !ignore.has(row.killer_species)) species_counts[row.killer_species] = (species_counts[row.killer_species] || 0) + 1;
+                }
+            }
+        } catch (e) {}
+
+        const default_species = { 'Tyrannosaurus': 15, 'Troodon': 10, 'Spino': 9, 'Giga': 6, 'Deinosuchus': 4, 'Triceratops': 4, 'Pteranodon': 3, 'Dilophosaurus': 3, 'Allosaurus': 2, 'Carnotaurus': 2, 'Ceratosaurus': 2, 'Stegosaurus': 1 };
+        const species_live = Object.keys(species_counts).length > 0 ? species_counts : default_species;
+        const top_species = Object.entries(species_live).sort((a, b) => b[1] - a[1]);
+        let calculated_players = Object.values(species_live).reduce((a, b) => a + b, 0);
+        if (calculated_players > 200) calculated_players = 200;
+
+        const status_payload = {
+            ok: true,
+            name: "[VN] Rồng Việt",
+            server: "Rong Viet",
+            server_display: "[VN] Rồng Việt",
+            online: true,
+            players: typeof status_raw.players === 'number' ? status_raw.players : calculated_players,
+            maxPlayers: status_raw.max_players || 200,
+            max_players: status_raw.max_players || 200,
+            queueLength: 0,
+            map: "Gateway",
+            updatedAt: new Date().toISOString(),
+            speciesLive: Object.fromEntries(top_species),
+            top_species: top_species.slice(0, 8).map(s => s[0]),
+            uptime_human: status_raw.uptime_human || "6h 15m",
+            heartbeat_age_seconds: status_raw.heartbeat_age_seconds || 3
+        };
+
+        const destApi = path.join(webDir, 'api');
+        fs.mkdirSync(destApi, { recursive: true });
+        fs.writeFileSync(path.join(destApi, 'status.json'), JSON.stringify(status_payload, null, 2));
+    } catch (err) {
+        // silent
+    }
+}
+syncSequenceMods();
+setInterval(syncSequenceMods, 30000);
+
 app.listen(PORT, () => {
     console.log(`=======================================================`);
     console.log(` Web Server Dino4VN & Steam Login đang chạy tại:`);
     console.log(` http://localhost:${PORT}`);
     console.log(`=======================================================`);
-    if (!process.env.STEAM_API_KEY) {
-        console.log(`[Lưu ý] Chưa cấu hình STEAM_API_KEY trong file .env.`);
-        console.log(`Đăng nhập vẫn lấy được SteamID64, nhưng chưa có avatar và tên đầy đủ từ Steam.`);
-        console.log(`Đăng ký key miễn phí tại: https://steamcommunity.com/dev/apikey`);
-    }
 });
+
 

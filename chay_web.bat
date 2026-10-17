@@ -4,5 +4,5 @@ cd /d "%~dp0"
 echo ===================================================
 echo Dang khoi dong Web va dong bo API Rong Viet...
 echo ===================================================
-python server.py
+node server.js
 pause
