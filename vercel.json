@@ -1,12 +1,11 @@
 {
+  "version": 2,
+  "outputDirectory": "dino4vn.com",
   "cleanUrls": true,
+  "trailingSlash": false,
   "rewrites": [
     {
       "source": "/api/status.json",
-      "destination": "/api/status"
-    },
-    {
-      "source": "/api/status",
       "destination": "/api/status"
     },
     {
@@ -16,14 +15,17 @@
     {
       "source": "/api/player/me",
       "destination": "/api/player/me"
-    },
+    }
+  ],
+  "headers": [
     {
-      "source": "/",
-      "destination": "/dino4vn.com/index.html"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/dino4vn.com/$1"
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     }
   ]
 }
