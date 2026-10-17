@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>Gateway map | Rong Viet, The Isle: Evrima</title>
+<meta name="description" content="Map of the Gateway island in The Isle: Evrima: water, sanctuaries, migration zones, salt licks, food spots and an A1 to L12 grid. See who is playing on the Rong Viet server, and your own position when you sign in with Steam.">
+
+<link rel="canonical" href="map.html">
+
+
+<link rel="alternate" hreflang="vi" href="../map.html">
+<link rel="alternate" hreflang="en" href="map.html">
+<link rel="alternate" hreflang="x-default" href="../map.html">
+
+
+
+<meta name="theme-color" content="#131E27">
+<meta name="color-scheme" content="dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rong Viet">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://rongviet.sequencemods.com/en/map">
+<meta property="og:title" content="Gateway map | Rong Viet">
+<meta property="og:description" content="Where the water is, where the sanctuaries are, which way the migration zones run. And which cell you are standing in.">
+<meta property="og:image" content="https://rongviet.sequencemods.com/assets/img/og-1200x630.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Rong Viet badge on a tropical forest background with a dinosaur silhouette">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="../favicon.ico" sizes="32x32">
+<link rel="icon" href="../assets/img/logo-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon-180.png">
+<link rel="manifest" href="../site.webmanifest">
+
+
+<link rel="preload" as="font" type="font/woff2" crossorigin="" href="../assets/fonts/be-vietnam-pro-vietnamese-400-normal.woff2">
+
+
+
+<link rel="stylesheet" href="../assets/site.rongviet.css?v=3">
+
+<link rel="stylesheet" href="../assets/vendor/leaflet-1.9.4-52112eb6/leaflet.css">
+
+
+<script src="../assets/i18n.en.app.20261013.fb4bc6db.js"></script>
+<script src="../assets/i18n.en.map.20261013.9a3016a6.js"></script>
+
+<script src="../assets/app.20261013.236cfccd.js?v=3" defer=""></script>
+
+<script src="../assets/chay.20261013.16b663fe.js" defer=""></script>
+<script src="../assets/vendor/leaflet-1.9.4-52112eb6/leaflet.js" defer=""></script>
+<script src="../assets/map.20261013.bba994f5.js?v=2" defer=""></script>
+
+</head>
+<body class="la-bando">
+<a class="skip" href="#main">Skip to content</a>
+
+
+<header class="app">
+  <div class="app__hang wrap">
+    <a class="brand" href="../index.htm">
+      <img src="../assets/img/logo-256.png" width="34" height="34" alt="" decoding="async">
+      <span class="brand__txt">Rong Viet</span>
+    </a>
+
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav__trong">
+        
+        
+        <a data-nav="la" href="tai-launcher.html">Get the HUD</a>
+        
+        <a data-nav="la" href="huong-dan.html">How to join</a>
+        
+        <a data-nav="la" href="noi-quy.html">Rules</a>
+        
+        <a data-nav="la" href="map.html" aria-current="page">Map</a>
+        
+        <a data-nav="la" href="bang-xep-hang.html">Leaderboard</a>
+        <a data-nav="la" href="../cong-dong.html">Community</a>
+        
+        <a data-nav="la" href="../gara.html">Garage</a>
+        
+        <a data-nav="la" href="donate.html">Support us</a>
+        
+        
+        <a data-nav="vao" hidden="" href="tai-launcher.html">Get the HUD</a>
+        
+        <a data-nav="vao" hidden="" href="../me.html">My page</a>
+        
+        <a data-nav="vao" hidden="" href="../gara.html">Garage</a>
+        
+        <a data-nav="vao" hidden="" href="map.html" aria-current="page">Map</a>
+        
+        <a data-nav="vao" hidden="" href="bang-xep-hang.html">Leaderboard</a>
+        <a data-nav="vao" hidden="" href="../skin.html">Skins</a>
+        
+        <a data-nav="vao" hidden="" href="donate.html">Support us</a>
+        
+      </div>
+    </nav>
+
+    <div class="tk" id="tk">
+      
+      
+      <a class="btn btn--nho" href="../map.html" hreflang="vi" lang="vi" title="Xem trang này bằng tiếng Việt" aria-label="Xem trang này bằng tiếng Việt">VI</a>
+      <a class="btn btn--nho" href="https://discord.gg/rvie">Discord</a>
+      <a class="btn btn--nho" id="tk-vao" href="/api/auth/steam?return=%2Fmap">Sign in with Steam</a>
+      <span class="tk__ten" id="tk-ten" hidden=""></span>
+      <a class="tk__ra" id="tk-ra" href="../me.html" hidden="">My page</a>
+      
+      <button type="button" class="tk__thoat" id="tk-thoat" hidden="">Sign out</button>
+    </div>
+  </div>
+</header>
+
+
+<div class="chay" id="chay">
+  <div class="chay__khung wrap">
+    <p class="chay__muc" id="chay-day"><span class="chay__chu">This server runs on our own money and spare time.</span></p>
+    
+    <button type="button" class="chay__dung" id="chay-dung" aria-controls="chay-day" aria-pressed="false" hidden="">Pause</button>
+    <a class="chay__nut" href="donate.html">Support the server</a>
+  </div>
+</div>
+
+<main id="main">
+
+<div class="bd">
+  <div id="bando" role="application" aria-label="Interactive map of Gateway island"></div>
+
+  <div class="bd__tren">
+    <h1 class="bd__ten">Gateway map</h1>
+    <p class="bd__tt" id="bando-tt" role="status" aria-live="polite">
+      <span class="tt__cham" id="bando-tt-cham"></span><span id="bando-tt-so">Loading…</span>
+    </p>
+  </div>
+
+  <div class="bd__zoom">
+    <button type="button" id="bando-zoom-in" aria-label="Zoom in">+</button>
+    <button type="button" id="bando-zoom-out" aria-label="Zoom out">−</button>
+  </div>
+
+  <button type="button" class="bd__nut-bang" id="bando-mo" aria-expanded="false" aria-controls="bando-bang">Layers and options</button>
+
+  <aside class="bd__bang" id="bando-bang" aria-label="Map layers and options">
+    <div class="bd__bang-tren">
+      <strong>Layers and options</strong>
+      <button type="button" class="bd__dong" id="bando-dong" aria-label="Close panel">✕</button>
+    </div>
+
+    <div class="bd__cuon">
+      <label class="bd__nhan" for="bando-tim">Search places</label>
+      <input class="bd__o-tim" id="bando-tim" type="search" autocomplete="off" placeholder="Delta, Sanctuary, Highland…" aria-describedby="bando-tim-kq">
+      <div class="bd__kq" id="bando-tim-kq" role="listbox" aria-label="Search results"></div>
+
+      <section class="bd__khoi">
+        <h2 class="bd__h2">My position</h2>
+        <div id="bando-toi-dangtai"><p class="dim nho mb-0">Loading…</p></div>
+        <div id="bando-toi-chuadangnhap" hidden="">
+          <p class="dim nho">Sign in with Steam to see your own dot.</p>
+          <a class="btn btn--nho btn--chinh" href="/api/auth/steam?return=%2Fmap">Sign in with Steam</a>
+        </div>
+        <div id="bando-toi-co" hidden="">
+          <p class="bd__o-toi" id="bando-toi-o" hidden=""></p>
+          <p class="dim nho" id="bando-toi-chu"></p>
+          <button type="button" class="btn btn--nho" id="bando-toi-nut">Go to my position</button>
+        </div>
+      </section>
+
+      <section class="bd__khoi">
+        <h2 class="bd__h2">Show layers</h2>
+        <fieldset class="bd__lop" id="bando-lop">
+          <legend class="sr">Toggle each group of places</legend>
+        </fieldset>
+      </section>
+
+      <section class="bd__khoi">
+        <h2 class="bd__h2">Options</h2>
+        <label class="bd__o"><input type="checkbox" id="bando-luoi"><span>A1 to L12 grid</span></label>
+        <label class="bd__o"><input type="checkbox" id="bando-nhan" checked=""><span>Place name labels</span></label>
+        <label class="bd__nhan" for="bando-mo-anh">Background image opacity</label>
+        <input class="bd__truot" id="bando-mo-anh" type="range" min="20" max="100" step="5" value="100">
+        <button type="button" class="btn btn--nho" id="bando-toanman">Full screen</button>
+      </section>
+
+      <section class="bd__khoi">
+        <h2 class="bd__h2">Who is playing what</h2>
+        <div id="bando-loai"><p class="dim nho mb-0">Loading…</p></div>
+      </section>
+
+    </div>
+  </aside>
+
+  <noscript>
+    <p class="bd__noscript">The map needs JavaScript. The list of places is in the
+      <a href="huong-dan.html">guide</a>.</p>
+  </noscript>
+</div>
+
+</main>
+
+
+
+<script type="module" src="../beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"437c6c414292410ea02c291ceebeff71","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

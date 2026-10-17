@@ -1,0 +1,226 @@
+{
+  "ngayVN": "2026-10-17",
+  "homNay": [
+    {
+      "hang": 1,
+      "ten": "vutruongggg0805",
+      "loai": "Tyrannosaurus",
+      "phut": 310,
+      "km": 37.2,
+      "adult": 5,
+      "diem": 1310
+    },
+    {
+      "hang": 2,
+      "ten": "KUROSAGI",
+      "loai": "Spino",
+      "phut": 300,
+      "km": 36.0,
+      "adult": 5,
+      "diem": 1300
+    },
+    {
+      "hang": 3,
+      "ten": "T-rex Transformer",
+      "loai": "Troodon",
+      "phut": 155,
+      "km": 18.6,
+      "adult": 1,
+      "diem": 455
+    },
+    {
+      "hang": 4,
+      "ten": "tranphong1404995",
+      "loai": "Deinosuchus",
+      "phut": 135,
+      "km": 16.2,
+      "adult": 1,
+      "diem": 435
+    },
+    {
+      "hang": 5,
+      "ten": "zinhk",
+      "loai": "Triceratops",
+      "phut": 115,
+      "km": 13.8,
+      "adult": 1,
+      "diem": 415
+    },
+    {
+      "hang": 6,
+      "ten": "MùCâmĐiếc",
+      "loai": "Giga",
+      "phut": 50,
+      "km": 6.0,
+      "adult": 1,
+      "diem": 350
+    },
+    {
+      "hang": 7,
+      "ten": "Andiez-MiddleG",
+      "loai": "Pteranodon",
+      "phut": 115,
+      "km": 13.8,
+      "adult": 1,
+      "diem": 315
+    },
+    {
+      "hang": 8,
+      "ten": "Ben",
+      "loai": "Allosaurus",
+      "phut": 115,
+      "km": 13.8,
+      "adult": 1,
+      "diem": 315
+    },
+    {
+      "hang": 9,
+      "ten": "cậu hai JAPAN",
+      "loai": "Carnotaurus",
+      "phut": 45,
+      "km": 5.4,
+      "adult": 1,
+      "diem": 245
+    },
+    {
+      "hang": 10,
+      "ten": "powpow",
+      "loai": "Anky",
+      "phut": 95,
+      "km": 11.4,
+      "adult": 1,
+      "diem": 195
+    }
+  ],
+  "thangNay": [
+    {
+      "hang": 1,
+      "ten": "vutruongggg0805",
+      "loai": "Tyrannosaurus",
+      "phut": 310,
+      "km": 37.2,
+      "adult": 5,
+      "diem": 1310
+    },
+    {
+      "hang": 2,
+      "ten": "KUROSAGI",
+      "loai": "Spino",
+      "phut": 300,
+      "km": 36.0,
+      "adult": 5,
+      "diem": 1300
+    },
+    {
+      "hang": 3,
+      "ten": "T-rex Transformer",
+      "loai": "Troodon",
+      "phut": 155,
+      "km": 18.6,
+      "adult": 1,
+      "diem": 455
+    },
+    {
+      "hang": 4,
+      "ten": "tranphong1404995",
+      "loai": "Deinosuchus",
+      "phut": 135,
+      "km": 16.2,
+      "adult": 1,
+      "diem": 435
+    },
+    {
+      "hang": 5,
+      "ten": "zinhk",
+      "loai": "Triceratops",
+      "phut": 115,
+      "km": 13.8,
+      "adult": 1,
+      "diem": 415
+    },
+    {
+      "hang": 6,
+      "ten": "MùCâmĐiếc",
+      "loai": "Giga",
+      "phut": 50,
+      "km": 6.0,
+      "adult": 1,
+      "diem": 350
+    },
+    {
+      "hang": 7,
+      "ten": "Andiez-MiddleG",
+      "loai": "Pteranodon",
+      "phut": 115,
+      "km": 13.8,
+      "adult": 1,
+      "diem": 315
+    },
+    {
+      "hang": 8,
+      "ten": "Ben",
+      "loai": "Allosaurus",
+      "phut": 115,
+      "km": 13.8,
+      "adult": 1,
+      "diem": 315
+    },
+    {
+      "hang": 9,
+      "ten": "cậu hai JAPAN",
+      "loai": "Carnotaurus",
+      "phut": 45,
+      "km": 5.4,
+      "adult": 1,
+      "diem": 245
+    },
+    {
+      "hang": 10,
+      "ten": "powpow",
+      "loai": "Anky",
+      "phut": 95,
+      "km": 11.4,
+      "adult": 1,
+      "diem": 195
+    }
+  ],
+  "kyLucNgay": {
+    "songLau": {
+      "hang": 1,
+      "ten": "vutruongggg0805",
+      "loai": "Tyrannosaurus",
+      "phut": 310,
+      "km": 37.2,
+      "adult": 5,
+      "diem": 1310
+    },
+    "diXa": {
+      "hang": 2,
+      "ten": "KUROSAGI",
+      "loai": "Spino",
+      "phut": 300,
+      "km": 36.0,
+      "adult": 5,
+      "diem": 1300
+    },
+    "nuoiLon": {
+      "hang": 3,
+      "ten": "T-rex Transformer",
+      "loai": "Troodon",
+      "phut": 155,
+      "km": 18.6,
+      "adult": 1,
+      "diem": 455
+    }
+  },
+  "coef": {
+    "phut": 1.0,
+    "km": 1.0,
+    "adult": 500
+  },
+  "adultToiDaNgay": 2,
+  "kmDangDo": false,
+  "builtAt": 1792242955,
+  "sampleIntervalS": 600,
+  "doTuNgay": "2026-10-01"
+}

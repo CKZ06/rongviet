@@ -1,0 +1,29 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/api/status.json",
+      "destination": "/api/status"
+    },
+    {
+      "source": "/api/status",
+      "destination": "/api/status"
+    },
+    {
+      "source": "/api/bang-xep-hang.json",
+      "destination": "/api/bxh"
+    },
+    {
+      "source": "/api/player/me",
+      "destination": "/api/player/me"
+    },
+    {
+      "source": "/",
+      "destination": "/dino4vn.com/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/dino4vn.com/$1"
+    }
+  ]
+}

@@ -1,0 +1,312 @@
+Uri: https://dino4vn.com/
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\index.htm
+Content Type: text/html
+
+Uri: https://dino4vn.com/api/su-kien.js
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\api\su-kien.js
+Content Type: text/javascript
+
+Uri: https://dino4vn.com/assets/app.20261013.236cfccd.js
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\app.20261013.236cfccd.js
+Content Type: text/javascript
+
+Uri: https://dino4vn.com/assets/bxh.20261013.f74a494b.js
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\bxh.20261013.f74a494b.js
+Content Type: text/javascript
+
+Uri: https://dino4vn.com/assets/chay.20261013.16b663fe.js
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\chay.20261013.16b663fe.js
+Content Type: text/javascript
+
+Uri: https://dino4vn.com/assets/donate.20261013.71c21445.js
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\donate.20261013.71c21445.js
+Content Type: text/javascript
+
+Uri: https://dino4vn.com/assets/fonts/be-vietnam-pro-latin-400-normal.woff2
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\fonts\be-vietnam-pro-latin-400-normal.woff2
+Content Type: font/woff2
+
+Uri: https://dino4vn.com/assets/fonts/be-vietnam-pro-latin-600-normal.woff2
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\fonts\be-vietnam-pro-latin-600-normal.woff2
+Content Type: font/woff2
+
+Uri: https://dino4vn.com/assets/fonts/be-vietnam-pro-latin-800-normal.woff2
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\fonts\be-vietnam-pro-latin-800-normal.woff2
+Content Type: font/woff2
+
+Uri: https://dino4vn.com/assets/fonts/be-vietnam-pro-vietnamese-400-normal.woff2
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\fonts\be-vietnam-pro-vietnamese-400-normal.woff2
+Content Type: font/woff2
+
+Uri: https://dino4vn.com/assets/fonts/be-vietnam-pro-vietnamese-600-normal.woff2
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\fonts\be-vietnam-pro-vietnamese-600-normal.woff2
+Content Type: font/woff2
+
+Uri: https://dino4vn.com/assets/fonts/be-vietnam-pro-vietnamese-800-normal.woff2
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\fonts\be-vietnam-pro-vietnamese-800-normal.woff2
+Content Type: font/woff2
+
+Uri: https://dino4vn.com/assets/fonts/big-shoulders-display-latin-700-normal.woff2
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\fonts\big-shoulders-display-latin-700-normal.woff2
+Content Type: font/woff2
+
+Uri: https://dino4vn.com/assets/fonts/big-shoulders-display-latin-800-normal.woff2
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\fonts\big-shoulders-display-latin-800-normal.woff2
+Content Type: font/woff2
+
+Uri: https://dino4vn.com/assets/fonts/big-shoulders-display-vietnamese-700-normal.woff2
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\fonts\big-shoulders-display-vietnamese-700-normal.woff2
+Content Type: font/woff2
+
+Uri: https://dino4vn.com/assets/fonts/big-shoulders-display-vietnamese-800-normal.woff2
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\fonts\big-shoulders-display-vietnamese-800-normal.woff2
+Content Type: font/woff2
+
+Uri: https://dino4vn.com/assets/gara.20261012.f110480b.js
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\gara.20261012.f110480b.js
+Content Type: text/javascript
+
+Uri: https://dino4vn.com/assets/giai-dau.20261013.5f01a152.js
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\giai-dau.20261013.5f01a152.js
+Content Type: text/javascript
+
+Uri: https://dino4vn.com/assets/i18n.en.app.20261013.fb4bc6db.js
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\i18n.en.app.20261013.fb4bc6db.js
+Content Type: text/javascript
+
+Uri: https://dino4vn.com/assets/i18n.en.bxh.20261013.3720603c.js
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\i18n.en.bxh.20261013.3720603c.js
+Content Type: text/javascript
+
+Uri: https://dino4vn.com/assets/i18n.en.donate.20261013.eb8e32b9.js
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\i18n.en.donate.20261013.eb8e32b9.js
+Content Type: text/javascript
+
+Uri: https://dino4vn.com/assets/i18n.en.map.20261013.9a3016a6.js
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\i18n.en.map.20261013.9a3016a6.js
+Content Type: text/javascript
+
+Uri: https://dino4vn.com/assets/i18n.en.nha.20261013.ce1d30d0.js
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\i18n.en.nha.20261013.ce1d30d0.js
+Content Type: text/javascript
+
+Uri: https://dino4vn.com/assets/img/apple-touch-icon-180.png
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\img\apple-touch-icon-180.png
+Content Type: image/png
+
+Uri: https://dino4vn.com/assets/img/diem-tu.webp
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\img\diem-tu.webp
+Content Type: image/webp
+
+Uri: https://dino4vn.com/assets/img/logo-192.png
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\img\logo-192.png
+Content Type: image/png
+
+Uri: https://dino4vn.com/assets/img/logo-256.png
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\img\logo-256.png
+Content Type: image/png
+
+Uri: https://dino4vn.com/assets/map.20261013.bba994f5.js
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\map.20261013.bba994f5.js
+Content Type: text/javascript
+
+Uri: https://dino4vn.com/assets/map/gateway-v0.21.7-0975.webp
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\map\gateway-v0.21.7-0975.webp
+Content Type: image/webp
+
+Uri: https://dino4vn.com/assets/me-chien-tich.20261013.684d5042.js
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\me-chien-tich.20261013.684d5042.js
+Content Type: text/javascript
+
+Uri: https://dino4vn.com/assets/me-quyen-loi.20261013.28917437.js
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\me-quyen-loi.20261013.28917437.js
+Content Type: text/javascript
+
+Uri: https://dino4vn.com/assets/me.20261013.97bd18e0.js
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\me.20261013.97bd18e0.js
+Content Type: text/javascript
+
+Uri: https://dino4vn.com/assets/nha.20261013.f3795af9.js
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\nha.20261013.f3795af9.js
+Content Type: text/javascript
+
+Uri: https://dino4vn.com/assets/site.20261013.081e62e6.css
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\site.20261013.081e62e6.css
+Content Type: text/css
+
+Uri: https://dino4vn.com/assets/sk-luat.20261013.3dd90ab9.js
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\sk-luat.20261013.3dd90ab9.js
+Content Type: text/javascript
+
+Uri: https://dino4vn.com/assets/skin-gradient.20261013.0023427c.js
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\skin-gradient.20261013.0023427c.js
+Content Type: text/javascript
+
+Uri: https://dino4vn.com/assets/skin-tu.20261013.9de91792.js
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\skin-tu.20261013.9de91792.js
+Content Type: text/javascript
+
+Uri: https://dino4vn.com/assets/skin.20261013.c03b8803.js
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\skin.20261013.c03b8803.js
+Content Type: text/javascript
+
+Uri: https://dino4vn.com/assets/vaytrum.20261013.7d04bd80.js
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\vaytrum.20261013.7d04bd80.js
+Content Type: text/javascript
+
+Uri: https://dino4vn.com/assets/vendor/leaflet-1.9.4-52112eb6/images/layers-2x.png
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\vendor\leaflet-1.9.4-52112eb6\images\layers-2x.png
+Content Type: image/png
+
+Uri: https://dino4vn.com/assets/vendor/leaflet-1.9.4-52112eb6/images/layers.png
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\vendor\leaflet-1.9.4-52112eb6\images\layers.png
+Content Type: image/png
+
+Uri: https://dino4vn.com/assets/vendor/leaflet-1.9.4-52112eb6/images/marker-icon.png
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\vendor\leaflet-1.9.4-52112eb6\images\marker-icon.png
+Content Type: image/png
+
+Uri: https://dino4vn.com/assets/vendor/leaflet-1.9.4-52112eb6/leaflet.css
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\vendor\leaflet-1.9.4-52112eb6\leaflet.css
+Content Type: text/css
+
+Uri: https://dino4vn.com/assets/vendor/leaflet-1.9.4-52112eb6/leaflet.js
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\assets\vendor\leaflet-1.9.4-52112eb6\leaflet.js
+Content Type: text/javascript
+
+Uri: https://dino4vn.com/bang-xep-hang
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\bang-xep-hang.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/cong-dong
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\cong-dong.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/dieu-khoan-donate
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\dieu-khoan-donate.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/donate
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\donate.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/en/
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\en\index.htm
+Content Type: text/html
+
+Uri: https://dino4vn.com/en/bang-xep-hang
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\en\bang-xep-hang.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/en/donate
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\en\donate.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/en/huong-dan
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\en\huong-dan.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/en/map
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\en\map.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/en/map?lop=dc
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\en\map-3.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/en/map?lop=dm
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\en\map-2.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/en/map?lop=sa
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\en\map-1.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/en/map?lop=tt
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\en\map-4.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/en/noi-quy
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\en\noi-quy.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/en/prime
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\en\prime.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/en/tai-launcher
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\en\tai-launcher.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/event
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\event.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/favicon.ico
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\favicon.ico
+Content Type: image/vnd.microsoft.icon
+
+Uri: https://dino4vn.com/gara
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\gara.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/giai-dau
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\giai-dau.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/huong-dan
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\huong-dan.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/launcher/Dino4VN-Launcher-0.6.18.exe
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\launcher\Dino4VN-Launcher-0.6.18.exe
+Content Type: application/octet-stream
+
+Uri: https://dino4vn.com/map
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\map.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/map?lop=dc
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\map-3.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/map?lop=dm
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\map-2.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/map?lop=sa
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\map-1.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/map?lop=tt
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\map-4.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/me
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\me.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/noi-quy
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\noi-quy.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/prime
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\prime.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/site.webmanifest
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\site.webmanifest
+Content Type: text/plain
+
+Uri: https://dino4vn.com/skin
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\skin.html
+Content Type: text/html
+
+Uri: https://dino4vn.com/tai-launcher
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\tai-launcher.html
+Content Type: text/html
+
+Uri: https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920
+File Name: C:\Users\Quan\Downloads\git\dino4vn.com\beacon.min.js\v4bc70e2c01a94c73b74392e4234840661791215815920
+Content Type: text/javascript
+

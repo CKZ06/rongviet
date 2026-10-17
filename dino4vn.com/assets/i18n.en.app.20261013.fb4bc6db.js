@@ -1,0 +1,22 @@
+/* Từ điển tiếng Anh cho chuỗi trong app.js (chạy ở mọi trang). Khoá = câu Việt đúng từng chữ trong T(...). */
+window.D4V_EN = Object.assign(window.D4V_EN || {}, {
+  'Chưa rõ trạng thái': 'Status unknown',
+  'Không lấy được số liệu mới. Hỏi ở Discord nếu cần gấp.': 'Could not get fresh numbers. Ask on Discord if it is urgent.',
+  'Đang bảo trì': 'Under maintenance',
+  'Server sẽ quay lại sau ít phút. Thông báo chi tiết ở Discord.': 'The server will be back in a few minutes. Details are on Discord.',
+  'Đang chạy': 'Running',
+  'Chưa đếm được số người lúc này.': 'Cannot count players right now.',
+  'Còn {n} chỗ trống': '{n} slots open',
+  '{n} người đang chơi': '{n} players online',
+  '{d}/{toi}, {cho} người đang xếp hàng chờ vào': '{d}/{toi}, {cho} waiting in the queue',
+  '{cho} người đang xếp hàng chờ vào': '{cho} waiting in the queue',
+  '{d}/{toi}, vào được ngay, không mật khẩu': '{d}/{toi}, join right away, no password',
+  'Vào được ngay': 'Join right away',
+  'Cập nhật lúc {gio} giờ Việt Nam': 'Updated at {gio} Vietnam time',
+  'Server đang bảo trì.': 'The server is under maintenance.',
+  'Chưa lấy được số người theo loài lúc này.': 'Cannot get player counts by species right now.',
+  'Chưa ai chọn loài nào lúc này.': 'Nobody has picked a species right now.',
+  '{n} loài khác': '{n} other species',
+  '{n} người': '{n} players',
+  '{tong} người đã chọn loài. Cập nhật lúc {gio} giờ Việt Nam.': '{tong} players have picked a species. Updated at {gio} Vietnam time.',
+});

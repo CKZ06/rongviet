@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>Cách vào server Rồng Việt — hướng dẫn cho người mới</title>
+<meta name="description" content="Bốn bước vào server The Isle: Evrima Rồng Việt, mấy cái bẫy hay gặp, và cách bật voice chat trong game. Đọc hết mất khoảng ba phút.">
+
+<link rel="canonical" href="huong-dan.html">
+
+
+<link rel="alternate" hreflang="vi" href="huong-dan.html">
+<link rel="alternate" hreflang="en" href="en/huong-dan.html">
+<link rel="alternate" hreflang="x-default" href="huong-dan.html">
+
+
+
+<meta name="theme-color" content="#131E27">
+<meta name="color-scheme" content="dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rồng Việt">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:url" content="https://website Rồng Việt/huong-dan">
+<meta property="og:title" content="Cách vào server Rồng Việt — hướng dẫn cho người mới">
+<meta property="og:description" content="Bốn bước vào server The Isle: Evrima Rồng Việt, mấy cái bẫy hay gặp, và cách bật voice chat trong game. Đọc hết mất khoảng ba phút.">
+<meta property="og:image" content="https://website Rồng Việt/assets/img/og-1200x630.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Huy hiệu Rồng Việt trên nền rừng nhiệt đới, có bóng khủng long">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="assets/img/logo-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon-180.png">
+<link rel="manifest" href="site.webmanifest">
+
+
+<link rel="preload" as="font" type="font/woff2" crossorigin="" href="assets/fonts/be-vietnam-pro-vietnamese-400-normal.woff2">
+
+
+
+<link rel="stylesheet" href="assets/site.rongviet.css?v=3">
+
+
+
+
+<script src="assets/app.20261013.236cfccd.js?v=3" defer=""></script>
+
+<script src="assets/chay.20261013.16b663fe.js" defer=""></script>
+
+</head>
+<body>
+<a class="skip" href="#main">Bỏ qua, tới nội dung</a>
+
+
+<header class="app">
+  <div class="app__hang wrap">
+    <a class="brand" href="index.htm">
+      <img src="assets/img/logo-256.png" width="34" height="34" alt="" decoding="async">
+      <span class="brand__txt">Rồng Việt</span>
+    </a>
+
+    <nav class="nav" aria-label="Điều hướng chính">
+      <div class="nav__trong">
+        
+        
+        <a data-nav="la" href="tai-launcher.html">Tải HUD</a>
+        
+        <a data-nav="la" href="huong-dan.html" aria-current="page">Cách vào</a>
+        
+        <a data-nav="la" href="noi-quy.html">Nội quy</a>
+        
+        <a data-nav="la" href="map.html">Bản đồ</a>
+        
+        <a data-nav="la" href="bang-xep-hang.html">Xếp hạng</a>
+        <a data-nav="la" href="cong-dong.html">Cộng đồng</a>
+        
+        <a data-nav="la" href="gara.html">Gara</a>
+        
+        <a data-nav="la" href="donate.html">Ủng hộ</a>
+        
+        
+        <a data-nav="vao" hidden="" href="tai-launcher.html">Tải HUD</a>
+        
+        <a data-nav="vao" hidden="" href="me.html">Trang của tôi</a>
+        
+        <a data-nav="vao" hidden="" href="gara.html">Gara</a>
+        
+        <a data-nav="vao" hidden="" href="map.html">Bản đồ</a>
+        
+        <a data-nav="vao" hidden="" href="bang-xep-hang.html">Xếp hạng</a>
+        <a data-nav="vao" hidden="" href="skin.html">Đổi skin</a>
+        
+        <a data-nav="vao" hidden="" href="donate.html">Ủng hộ</a>
+        
+      </div>
+    </nav>
+
+    <div class="tk" id="tk">
+      
+      
+      <a class="btn btn--nho" href="en/huong-dan.html" hreflang="en" lang="en" title="Read this page in English" aria-label="Read this page in English">EN</a>
+      <a class="btn btn--nho" href="https://discord.gg/rvie">Discord</a>
+      <a class="btn btn--nho" id="tk-vao" href="/api/auth/steam?return=%2F">Đăng nhập Steam</a>
+      <span class="tk__ten" id="tk-ten" hidden=""></span>
+      <a class="tk__ra" id="tk-ra" href="me.html" hidden="">Trang của tôi</a>
+      
+      <button type="button" class="tk__thoat" id="tk-thoat" hidden="">Đăng xuất</button>
+    </div>
+  </div>
+</header>
+
+
+<div class="chay" id="chay">
+  <div class="chay__khung wrap">
+    <p class="chay__muc" id="chay-day"><span class="chay__chu">Server này chạy bằng tiền túi và thời gian rảnh.</span></p>
+    
+    <button type="button" class="chay__dung" id="chay-dung" aria-controls="chay-day" aria-pressed="false" hidden="">Dừng</button>
+    <a class="chay__nut" href="donate.html">Ủng hộ server</a>
+  </div>
+</div>
+
+<main id="main">
+
+<section class="dau-trang">
+  <div class="wrap">
+    <h1>Cách vào server Rồng Việt</h1>
+    <p class="dau-trang__dan">Đọc hết mất khoảng ba phút. Ai vào được rồi thì kéo thẳng xuống <a href="#voice">phần voice</a>.</p>
+  </div>
+</section>
+
+<div class="wrap bai">
+  
+  <nav class="bai__muc" aria-label="Trên trang này">
+    <p class="bai__muc-td">Trên trang này</p>
+    <ol>
+      <li><a href="#buoc">Bốn bước</a></li>
+      <li><a href="#bay">Mấy cái bẫy hay gặp</a></li>
+      <li><a href="#voice">Bật voice chat</a></li>
+      <li><a href="#gara">Gửi khủng long vào gara</a></li>
+      <li><a href="#hoi">Câu hỏi hay gặp</a></li>
+      
+    </ol>
+  </nav>
+  
+  <div class="bai__than">
+<section id="buoc">
+  <h2>Bốn bước</h2>
+  <ol class="buoc">
+    <li>
+      <h3>Có game trên Steam</h3>
+      <p>The Isle bán trên Steam, không có bản miễn phí và không có demo. Phải mua thì
+        mới chơi được, ở đâu cũng vậy chứ không riêng server này.</p>
+    </li>
+    <li>
+      <h3>Chuyển sang nhánh evrima</h3>
+      <p>Đây là bước bị bỏ sót nhiều nhất.</p>
+      <p>Mở Steam ▸ Library ▸ chuột phải vào <b>The Isle</b> ▸ <b>Properties</b> ▸ tab
+        <b>Betas</b> ▸ ở ô Beta Participation chọn <b>evrima</b> ▸ đóng cửa sổ, đợi
+        Steam tải xong.</p>
+      <p>Game có hai nhánh chạy song song: Legacy (bản cũ) và Evrima (bản mọi người
+        đang chơi). Mặc định Steam để bạn ở nhánh cũ. Ở nhánh cũ thì Rồng Việt và gần như
+        mọi server khác đều không hiện ra.</p>
+      <p><b>Dấu hiệu bạn còn ở nhánh sai:</b> mở server browser lên thấy trống hoặc chỉ
+        vài server lạ hoắc.</p>
+    </li>
+    <li>
+      <h3>Tìm server trong game</h3>
+      <p>Mở game ▸ <b>Server Browser</b> ▸ chọn tab <b>Unofficial</b> ▸ gõ
+        <b>Rồng Việt</b> vào ô tìm.</p>
+      <p>Chọn dòng <b>[VN] Rồng Việt</b> rồi bấm vào.</p>
+    </li>
+    <li>
+      <h3>Chọn loài và vào chơi</h3>
+      <p>Không cần mật khẩu, không cần xin duyệt, không cần lấy role gì trước.
+        Chọn loài là chơi.</p>
+    </li>
+  </ol>
+</section>
+
+<section id="bay">
+  <h2>Mấy cái bẫy hay gặp</h2>
+  <ul class="luat">
+    <li><b>Gõ nguyên tên đầy đủ thì không ra.</b> Chỉ gõ <b>Rồng Việt</b>. Đừng gõ cả dấu
+      ngoặc vuông [SEA/VN], đừng gõ dấu cách thừa ở đầu ô tìm.</li>
+    <li><b>Đang ở tab sai.</b> Server browser mặc định không mở tab Unofficial. Server
+      cộng đồng nằm hết ở tab đó.</li>
+    <li><b>Danh sách chưa tải xong.</b> Bấm Refresh và đợi vài giây. Lần đầu mở browser
+      sau khi bật game thường chậm.</li>
+    <li><b>Ai đó đưa bạn địa chỉ IP để dán vào.</b> Không dùng được. The Isle không cho
+      kết nối bằng IP, mọi đường vào đều đi qua server browser trong game. Ai bảo bạn
+      dán IP vào đâu đó thì hoặc là nhầm, hoặc là đang lừa.</li>
+    <li><b>Server đầy.</b> Cứ bấm vào, game tự xếp bạn vào hàng đợi. Để nguyên màn hình
+      chờ, đến lượt là vào thẳng. Thoát ra vào lại là mất chỗ, phải xếp từ đầu.</li>
+    <li><b>Vẫn không vào được.</b> Hỏi ở Discord, ghi rõ: đã chuyển nhánh evrima chưa,
+      đang ở tab nào, gõ chữ gì vào ô tìm, và màn hình báo lỗi gì. Bốn thông tin đó đủ
+      để bọn mình đoán ra trong một câu trả lời.</li>
+  </ul>
+</section>
+
+<section id="voice">
+  <h2>Bật voice chat</h2>
+  <p class="muted">Server Rồng Việt có voice chat trong game: bạn nghe được những người chơi
+    <b>ở gần</b>, đi xa khỏi họ thì không nghe nữa.</p>
+  <p class="muted">Game gốc <b>không có</b> tính năng này. Muốn nghe được thì phải cài
+    thêm một lần duy nhất.</p>
+  <ol class="buoc">
+    <li>
+      <h3>Tải launcher</h3>
+      <p><b>Launcher của Rồng Việt</b> nghe được đúng hướng và xa gần, có chọn micro
+        và tai nghe ngay trong ứng dụng.</p>
+      <p><a class="btn btn--chinh" href="tai-launcher.html">Tải Rồng Việt Launcher</a></p>
+      <p class="muted">Đây là launcher duy nhất dùng được ở Rồng Việt. Launcher voice của
+        server khác <b>không nghe được</b> ở đây.</p>
+    </li>
+    <li><h3>Cài xong, mở launcher lên</h3></li>
+    <li>
+      <h3>Tìm dòng [VN] Rồng Việt trong danh sách, bấm vào</h3>
+      <p>Xong. Vào game là nghe được.</p>
+    </li>
+  </ol>
+
+  <h3>Lưu ý nhỏ</h3>
+  <ul class="luat luat--ok">
+    <li>Mở launcher <b>trước</b> khi vào game, và để nó chạy nền suốt buổi chơi.</li>
+    <li>Không cần cài Mumble. Ai đang dùng Mumble cũ thì tắt đi.</li>
+    <li>Lần đầu Windows hỏi cho phép micro thì chọn <b>Cho phép</b>.</li>
+    <li>Nếu trong game hiện dòng “account is not linked”, gõ vào khung chat:
+      <b>/link-account &lt;mã hiện trong launcher&gt;</b></li>
+  </ul>
+  <p class="dim nho">Vẫn không nghe được ai? Hỏi ở Discord, ghi rõ: đã mở launcher chưa,
+    đã bấm vào tên server chưa, nghe được người khác không hay chỉ mình bị.</p>
+</section>
+
+
+<section id="gara">
+  <h2>Gửi khủng long vào gara</h2>
+  <p>Gara giữ hộ con dino của bạn khi không chơi, lấy ra lúc nào cũng được.
+    Làm trên web ở <a href="gara.html">trang gara</a>, hoặc gõ lệnh ngay trong game.</p>
+
+  <h3>Làm ngay trong game</h3>
+  <table class="thongso">
+    <tbody>
+      <tr><th scope="row"><code>!gui</code></th><td>Gửi con đang chơi vào ô trống đầu tiên</td></tr>
+      <tr><th scope="row"><code>!gui 2</code></th><td>Gửi vào đúng ô số 2</td></tr>
+      <tr><th scope="row"><code>!lay 1</code></th><td>Lấy con ở ô số 1 ra</td></tr>
+    </tbody>
+  </table>
+
+  
+  <h3>Cần biết trước khi gửi và lấy</h3>
+  <ul class="luat luat--ok">
+    <li><b>Vừa mất máu hoặc đang chảy máu thì 1 phút sau mới gửi được.</b> Tính cả máu
+      tụt vì đói hoặc khát. Lệnh sẽ báo còn bao nhiêu giây. <code>!slay</code> và safelog
+      (giữ H) cũng theo đúng luật này.</li>
+    <li><b>Bấm xong phải đứng yên hết thanh chờ</b> (số giây hiện ngay trên màn hình
+      khi bạn bấm, hiện là <b>1 phút</b>). Trong lúc đó mà máu tụt thì hệ thống tự
+      huỷ, con dino vẫn an toàn, không mất gì. Đây là cách bọn mình chặn việc đang
+      đánh nhau thì cất con đi cho đối phương không lấy được xác.
+      <b>Máu tụt vì đói hoặc khát cũng tính</b>, nên hãy cho ăn uống đầy đủ trước
+      khi cất. <b>Xê dịch quá 3 mét</b> khỏi chỗ bạn đứng lúc bấm cũng huỷ — vị trí
+      được kiểm mỗi giây, nên hãy đứng yên thật sự.</li>
+    <li><b>Con phải đủ lớn</b> (từ 40% trưởng thành trở lên).</li>
+    <li><b>Gửi xong là con đó rời khỏi thế giới</b> và bạn quay về màn chọn loài. Nó
+      vẫn nguyên trong gara, lấy ra lúc nào cũng được.</li>
+    <li><b>Muốn lấy ra thì phải ĐANG CƯỠI một con cùng loài.</b> Chọn đúng loài đó ở
+      màn chọn loài, spawn ra, rồi mới gõ <code>!lay</code>: dữ liệu con cũ sẽ được
+      đắp lên con vừa spawn. Đang ở màn chọn loài thì chưa lấy được.</li>
+    <li><b>Lấy ra cũng phải đứng yên 1 phút.</b> Máu tụt trong lúc chờ là huỷ, và
+      <b>xê dịch quá 3 mét</b> khỏi chỗ bạn đứng lúc bấm cũng huỷ. Vị trí được kiểm
+      mỗi giây, nên hãy đứng yên thật sự cho tới khi con dino ra. Huỷ thì con dino
+      vẫn còn nguyên trong gara, bạn không mất gì cả.</li>
+    <li><b>Người chơi quanh bạn được báo trước.</b> Ngay khi bạn bấm lấy, những người ở
+      gần nhất trong vòng 500 mét sẽ nhận một dòng báo: sắp có con gì xuất hiện, trưởng
+      thành bao nhiêu phần trăm và cách họ khoảng bao xa. Gara không phải chỗ để hiện ra
+      bất ngờ sau lưng người khác.</li>
+  </ul>
+  <p class="dim nho">Dùng gara để né giao tranh là vi phạm nội quy, giống hệt
+    thoát game giữa trận. Xem <a href="noi-quy.html">nội quy</a>.</p>
+</section>
+
+<section id="hoi">
+  <h2>Câu hỏi hay gặp</h2>
+  
+  <div class="faq">
+    <details name="faq">
+      <summary>Tìm trong server browser không thấy Rồng Việt?</summary>
+      <div class="faq__than"><p>Kiểm tra bốn thứ theo đúng thứ tự: đã chuyển sang nhánh
+        evrima chưa, đang ở tab Unofficial chưa, ô tìm có gõ đúng chữ Rồng Việt không, và
+        đã bấm Refresh chưa. Chín trên mười trường hợp là kẹt ở cái đầu tiên.</p></div>
+    </details>
+    <details name="faq">
+      <summary>Vào server bằng IP được không?</summary>
+      <div class="faq__than"><p>Không. The Isle không hỗ trợ kết nối bằng IP, mọi người
+        đều phải qua server browser trong game.</p></div>
+    </details>
+    <details name="faq">
+      <summary>Bấm vào server thì bị xếp hàng đợi, phải làm gì?</summary>
+      <div class="faq__than"><p>Không phải làm gì cả. Server đầy thì game tự xếp hàng,
+        để nguyên màn hình chờ là đến lượt sẽ vào thẳng. Thoát ra vào lại thì mất chỗ,
+        phải xếp từ đầu.</p></div>
+    </details>
+    <details name="faq">
+      <summary>Bấm tab Eggs thì nó quay mãi ở “Connecting to server…”?</summary>
+      <div class="faq__than">
+        <p>Không phải lỗi. Tab đó chỉ hiện được khi trên server đang có tổ mở công khai.
+          Muốn có tổ thì phải có hai con trưởng thành cùng loài khác giới ghép đôi, xây
+          tổ, đẻ và ấp xong, rồi chủ tổ bật cho người khác vào. Chưa có tổ nào mở thì
+          game để nguyên màn hình chờ chứ không báo gì.</p>
+        <p>Cứ chọn loài ở các tab còn lại mà chơi bình thường.</p>
+      </div>
+    </details>
+    <details name="faq">
+      <summary>Cài voice có tốn tiền không?</summary>
+      <div class="faq__than"><p>Không. Tải về là dùng được.</p></div>
+    </details>
+    <details name="faq">
+      <summary>Có virus không?</summary>
+      <div class="faq__than"><p>Không. Đây là app do chính Rồng Việt làm, tải thẳng từ
+        website Rồng Việt. Windows sẽ hỏi lại một lần vì file chưa mua chứng chỉ ký số,
+        bấm <b>Thông tin thêm → Vẫn chạy</b> là xong.</p></div>
+    </details>
+    <details name="faq">
+      <summary>Không cài voice có vào được server không?</summary>
+      <div class="faq__than"><p>Được. Chỉ là sẽ không nghe được ai nói.</p></div>
+    </details>
+    <details name="faq">
+      <summary>Nghe được người này nhưng không nghe được người kia?</summary>
+      <div class="faq__than"><p>Người kia chưa cài, hoặc cài rồi mà chưa bấm vào tên
+        server trong launcher.</p></div>
+    </details>
+    <details name="faq">
+      <summary>Tiếng lúc to lúc nhỏ?</summary>
+      
+      <div class="faq__than"><p>Đúng như vậy là bình thường. Voice của Rồng Việt nhỏ dần
+        khi người kia đi xa và nghe được từ hướng nào; ra quá xa thì mất tiếng hẳn.</p></div>
+    </details>
+  </div>
+</section>
+
+  </div>
+</div>
+
+</main>
+
+
+
+<footer class="chan">
+  <div class="wrap chan__trong">
+    <div>
+      <p class="chan__ten">Rồng Việt</p>
+      <p class="dim">Server The Isle: Evrima cho người Việt.</p>
+    </div>
+    <nav aria-label="Liên kết cuối trang">
+      <ul class="chan__ds">
+        <li><a href="huong-dan.html">Cách vào server</a></li><li><a href="tai-launcher.html">Tải launcher</a></li><li><a href="noi-quy.html">Nội quy</a></li><li><a href="map.html">Bản đồ Gateway</a></li><li><a href="bang-xep-hang.html">Bảng xếp hạng</a></li><li><a href="prime.html">Prime Elder</a></li><li><a href="gara.html">Gara khủng long</a></li><li><a href="cong-dong.html">Cộng đồng</a></li><li><a href="donate.html">Ủng hộ server</a></li>
+        <li><a href="https://discord.gg/rvie">Discord</a></li>
+        <li><a href="/fb">Facebook</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+<script type="module" src="beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"437c6c414292410ea02c291ceebeff71","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>Rong Viet leaderboard | The Isle: Evrima server in Vietnam</title>
+<meta name="description" content="Player leaderboard for the Rong Viet server: survival time, distance travelled and dinosaurs raised to adulthood. Updated every few minutes.">
+
+<link rel="canonical" href="bang-xep-hang.html">
+
+
+<link rel="alternate" hreflang="vi" href="../bang-xep-hang.html">
+<link rel="alternate" hreflang="en" href="bang-xep-hang.html">
+<link rel="alternate" hreflang="x-default" href="../bang-xep-hang.html">
+
+
+
+<meta name="theme-color" content="#131E27">
+<meta name="color-scheme" content="dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rong Viet">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://rongviet.sequencemods.com/en/bang-xep-hang">
+<meta property="og:title" content="Rong Viet leaderboard">
+<meta property="og:description" content="Who is leading on the Vietnamese The Isle server?">
+<meta property="og:image" content="https://rongviet.sequencemods.com/assets/img/og-1200x630.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Rong Viet badge on a tropical forest background with a dinosaur silhouette">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="../favicon.ico" sizes="32x32">
+<link rel="icon" href="../assets/img/logo-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon-180.png">
+<link rel="manifest" href="../site.webmanifest">
+
+
+<link rel="preload" as="font" type="font/woff2" crossorigin="" href="../assets/fonts/be-vietnam-pro-vietnamese-400-normal.woff2">
+
+
+
+<link rel="stylesheet" href="../assets/site.rongviet.css?v=3">
+
+
+
+<script src="../assets/i18n.en.app.20261013.fb4bc6db.js"></script>
+<script src="../assets/i18n.en.bxh.20261013.3720603c.js"></script>
+
+<script src="../assets/app.20261013.236cfccd.js?v=3" defer=""></script>
+
+<script src="../assets/chay.20261013.16b663fe.js" defer=""></script>
+<script src="../assets/bxh.20261013.f74a494b.js?v=2" defer=""></script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+
+<header class="app">
+  <div class="app__hang wrap">
+    <a class="brand" href="../index.htm">
+      <img src="../assets/img/logo-256.png" width="34" height="34" alt="" decoding="async">
+      <span class="brand__txt">Rong Viet</span>
+    </a>
+
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav__trong">
+        
+        
+        <a data-nav="la" href="tai-launcher.html">Get the HUD</a>
+        
+        <a data-nav="la" href="huong-dan.html">How to join</a>
+        
+        <a data-nav="la" href="noi-quy.html">Rules</a>
+        
+        <a data-nav="la" href="map.html">Map</a>
+        
+        <a data-nav="la" href="bang-xep-hang.html" aria-current="page">Leaderboard</a>
+        <a data-nav="la" href="../cong-dong.html">Community</a>
+        
+        <a data-nav="la" href="../gara.html">Garage</a>
+        
+        <a data-nav="la" href="donate.html">Support us</a>
+        
+        
+        <a data-nav="vao" hidden="" href="tai-launcher.html">Get the HUD</a>
+        
+        <a data-nav="vao" hidden="" href="../me.html">My page</a>
+        
+        <a data-nav="vao" hidden="" href="../gara.html">Garage</a>
+        
+        <a data-nav="vao" hidden="" href="map.html">Map</a>
+        
+        <a data-nav="vao" hidden="" href="bang-xep-hang.html" aria-current="page">Leaderboard</a>
+        <a data-nav="vao" hidden="" href="../skin.html">Skins</a>
+        
+        <a data-nav="vao" hidden="" href="donate.html">Support us</a>
+        
+      </div>
+    </nav>
+
+    <div class="tk" id="tk">
+      
+      
+      <a class="btn btn--nho" href="../bang-xep-hang.html" hreflang="vi" lang="vi" title="Xem trang này bằng tiếng Việt" aria-label="Xem trang này bằng tiếng Việt">VI</a>
+      <a class="btn btn--nho" href="https://discord.gg/rvie">Discord</a>
+      <a class="btn btn--nho" id="tk-vao" href="/api/auth/steam?return=%2Fbang-xep-hang">Sign in with Steam</a>
+      <span class="tk__ten" id="tk-ten" hidden=""></span>
+      <a class="tk__ra" id="tk-ra" href="../me.html" hidden="">My page</a>
+      
+      <button type="button" class="tk__thoat" id="tk-thoat" hidden="">Sign out</button>
+    </div>
+  </div>
+</header>
+
+
+<div class="chay" id="chay">
+  <div class="chay__khung wrap">
+    <p class="chay__muc" id="chay-day"><span class="chay__chu">This server runs on our own money and spare time.</span></p>
+    
+    <button type="button" class="chay__dung" id="chay-dung" aria-controls="chay-day" aria-pressed="false" hidden="">Pause</button>
+    <a class="chay__nut" href="donate.html">Support the server</a>
+  </div>
+</div>
+
+<main id="main">
+
+<section class="dau-trang">
+  <div class="wrap dau-trang__luoi">
+    <div>
+      <h1>Who is leading Rong Viet</h1>
+      <p class="dau-trang__dan">Ranked by score, which adds up <strong>survival time</strong>,
+        <strong>distance travelled</strong> and <strong>dinosaurs raised to
+        adulthood</strong>. No login needed to view it.</p>
+    </div>
+    <div class="bxh-dau">
+      <div class="tab" role="tablist" aria-label="Time period">
+        <button type="button" id="tab-homnay" role="tab" aria-selected="true" aria-controls="bxh-than">Today</button>
+        <button type="button" id="tab-thangnay" role="tab" aria-selected="false" aria-controls="bxh-than">This month</button>
+      </div>
+      <p class="bxh-tong so" id="bxh-tong"><span id="tg-nguoi">—</span> players,
+        <span id="tg-gio">—</span> survived, <span id="tg-km">—</span> travelled,
+        <span id="tg-adult">—</span> adults.</p>
+      <p class="dim nho" id="bxh-tuoi">Loading data…</p>
+    </div>
+  </div>
+</section>
+
+<section class="doan doan--hep">
+  <div class="wrap">
+    <div id="bxh-buc" class="buc">
+      <div class="buc__o buc__o--cho buc__o--1"></div>
+      <div class="buc__o buc__o--cho"></div>
+      <div class="buc__o buc__o--cho"></div>
+    </div>
+
+    <table class="bxh">
+      <caption id="bxh-caption">Loading the leaderboard…</caption>
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Player</th>
+          <th scope="col">Dinosaur</th>
+          <th scope="col">Survival time</th>
+          <th scope="col">Distance</th>
+          <th scope="col">Adults</th>
+          <th scope="col">Score</th>
+        </tr>
+      </thead>
+      <tbody id="bxh-than">
+        <tr><td colspan="7" class="dim">Loading…</td></tr>
+      </tbody>
+    </table>
+
+    <noscript>
+      <p class="canhbao">The leaderboard needs JavaScript to load the latest numbers.
+        A daily snapshot is posted on <a href="https://discord.gg/rvie">Discord</a>.</p>
+    </noscript>
+  </div>
+</section>
+
+<section class="doan">
+  <div class="wrap bxh-giai">
+    <div>
+      <h2>How the score works</h2>
+      <p class="muted">Three parts, added together:</p>
+      <table class="thongso">
+        <tbody>
+          <tr><th scope="row">Survival time</th>
+              <td><strong class="so" id="ct-phut">1.5</strong> points per minute survived</td></tr>
+          <tr><th scope="row">Distance</th>
+              <td id="ct-km-o"><span class="pill">measuring</span></td></tr>
+          <tr><th scope="row">Adult dinosaurs</th>
+              <td>Bonus points for a dino raised to 100%<span id="ct-tran">, counting at most
+                1 per day</span></td></tr>
+        </tbody>
+      </table>
+      <p class="dim nho" id="ct-ghichu" hidden=""></p>
+    </div>
+
+    <div>
+      <h2>Where these numbers come from</h2>
+      <p class="muted">
+        The server records itself every few dozen seconds: who is playing, which dino, and where.
+        The leaderboard adds that up and is rebuilt every few minutes.
+      </p>
+      <h3>Why the numbers can be off</h3>
+      <ul class="luat">
+        <li>This is an <strong>estimate</strong>, not a stopwatch. Any time the recording
+          system is interrupted, that stretch is not counted.</li>
+        <li>A dino that becomes an adult and dies within a few dozen seconds may
+          <strong>not be counted in time</strong>.</li>
+        <li>Switching to another dino (dying, or taking a different one out of the garage)
+          <strong>restarts</strong> the distance for that dino.</li>
+      </ul>
+      <p class="dim nho">
+        The error can only go <strong>low</strong>, never high. We would rather undercount
+        than give points for something that did not happen.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="doan">
+  <div class="wrap nha-cot">
+    <h2>Want a spot on the board?</h2>
+    <p class="muted">There are no tricks, just play. But these three things help the most:</p>
+    <ol class="buoc">
+      <li><h3>Survive longer</h3><p>About half of the score comes from time survived. Knowing
+        when to run is worth more than knowing how to fight.</p></li>
+      <li><h3>Raise a dino to adulthood</h3><p id="meo-adult">Each day, one dino raised to
+        100% earns bonus points. A second one on the same day adds nothing.</p></li>
+      <li><h3>Keep moving</h3><p id="ct-km-loi">Distance earns points.
+        Anyone who migrates often or forages far has an edge.</p></li>
+    </ol>
+    <p class="mb-0"><a class="btn btn--chinh" href="huong-dan.html">How to join the server</a></p>
+  </div>
+</section>
+
+</main>
+
+
+
+<footer class="chan">
+  <div class="wrap chan__trong">
+    <div>
+      <p class="chan__ten">Rong Viet</p>
+      <p class="dim">A The Isle: Evrima server for Vietnamese players.</p>
+    </div>
+    <nav aria-label="Footer links">
+      <ul class="chan__ds">
+        <li><a href="huong-dan.html">How to join the server</a></li><li><a href="tai-launcher.html">Get the launcher</a></li><li><a href="noi-quy.html">Rules</a></li><li><a href="map.html">Gateway map</a></li><li><a href="bang-xep-hang.html">Leaderboard</a></li><li><a href="prime.html">Prime Elder</a></li><li><a href="../gara.html">Dinosaur garage</a></li><li><a href="../cong-dong.html">Community</a></li><li><a href="donate.html">Support the server</a></li>
+        <li><a href="https://discord.gg/rvie">Discord</a></li>
+        <li><a href="/fb">Facebook</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+<script type="module" src="../beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"437c6c414292410ea02c291ceebeff71","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

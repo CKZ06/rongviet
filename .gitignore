@@ -1,0 +1,7 @@
+node_modules/
+.env
+*.exe
+dino4vn.com/launcher/*.exe
+*.log
+__pycache__/
+
