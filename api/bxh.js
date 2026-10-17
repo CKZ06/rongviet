@@ -67,7 +67,7 @@ module.exports = async function handler(req, res) {
 
         const hom_nay = mapRows(rows_7d);
         const thang_nay = mapRows(rows_30d.length ? rows_30d : rows_7d);
-        const today_str = new Date().toISOString().slice(0, 10);
+        const today_str = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Ho_Chi_Minh' }).format(new Date());
 
         const bxh_data = {
             ngayVN: today_str,
