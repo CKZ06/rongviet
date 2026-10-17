@@ -8,16 +8,24 @@
   "trailingSlash": false,
   "rewrites": [
     {
+      "source": "/dang-nhap",
+      "destination": "/api/auth/steam"
+    },
+    {
+      "source": "/api/auth/steam",
+      "destination": "/api/auth/steam"
+    },
+    {
+      "source": "/api/auth/steam/return",
+      "destination": "/api/auth/return"
+    },
+    {
       "source": "/api/status.json",
       "destination": "/api/status"
     },
     {
       "source": "/api/bang-xep-hang.json",
       "destination": "/api/bxh"
-    },
-    {
-      "source": "/api/player/me",
-      "destination": "/api/player/me"
     }
   ],
   "headers": [
