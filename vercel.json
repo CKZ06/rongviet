@@ -26,22 +26,6 @@
     {
       "source": "/api/bang-xep-hang.json",
       "destination": "/api/bxh"
-    },
-    {
-      "source": "/api/donate.json",
-      "destination": "/api/donate"
-    },
-    {
-      "source": "/api/donate/trang-thai/:ma",
-      "destination": "/api/donate/trang-thai?ma=:ma"
-    },
-    {
-      "source": "/api/donate/tao",
-      "destination": "/api/donate/tao"
-    },
-    {
-      "source": "/api/donate/cua-toi",
-      "destination": "/api/donate/cua-toi"
     }
   ],
   "headers": [

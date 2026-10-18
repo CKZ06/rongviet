@@ -428,61 +428,45 @@
     nut.disabled = true;
     nut.textContent = T('Đang tạo mã…');
 
-    fetch('/api/donate/tao', {
-      method: 'POST',
-      credentials: 'same-origin',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(thanTao())
-    })
-      .then(function (r) { return r.json().catch(function () { return null; }); })
-      .then(function (d) {
-        nut.disabled = false;
-        nut.textContent = T('Lấy mã chuyển khoản');
-        if (!d || !d.ok) {
-          // Hỏng thì TRẢ form về. Không có dòng này thì một lượt lấy mã thất bại sau
-          // một lượt thành công sẽ để người dùng đứng trước một thẻ không sửa được gì.
-          $('dn-form').hidden = false;
-          hienLoi(loiThanhChu(d && d.err));
-          return;
-        }
-        $('dn-ma').textContent = d.ma;
-        $('dn-nh').textContent = d.nganHang.ten;
-        $('dn-so').textContent = d.nganHang.so;
-        $('dn-chu').textContent = d.nganHang.chu || '—';
-        $('dn-sotien').textContent = d.soTien ? tien(d.soTien) : T('Tùy tâm (nhập trên app)');
-        var qrImg = $('dn-qr');
-        if (qrImg) {
-          qrImg.setAttribute('src', d.qr || 'assets/img/qr-techcombank.jpg');
-          qrImg.onerror = function () {
-            this.src = 'assets/img/qr-techcombank.jpg';
-          };
-          qrImg.hidden = false;
-        }
-        if (d.lyDoNhan) {
-          hienLoi(T('Lời nhắn không hiển thị được, phần còn lại vẫn bình thường.'));
-        }
-        // 🔴 ẨN form khi đã có mã. Hai lý do, và lý do thứ hai mới là lý do thật:
-        //  1. Xong việc rồi thì ô nhập không còn nghĩa gì — thứ duy nhất còn quan
-        //     trọng là mã, số tài khoản và QR.
-        //  2. Bố cục /donate được đo để VỪA ĐÚNG một màn hình (`site.css` mục
-        //     `.dn-hai`). Để cả hai thẻ cùng hiện là cột trái dài thêm ~250px và
-        //     trang phải cuộn — đúng vào lúc người ta cần nhìn QR nhất. Đo
-        //     2026-09-05: `<main>` kết thúc ở 943px trên viewport 945px, tức là
-        //     KHÔNG còn chỗ cho một thẻ nữa.
-        $('dn-form').hidden = true;
-        $('dn-kq').hidden = false;
-        $('dn-tt').textContent = T('Đang chờ chuyển khoản…');
-        soLanHoi = 0;
-        if (hen) { clearTimeout(hen); }
-        hen = setTimeout(function () { hoiTrangThai(d.ma); }, NHIP_HOI);
-        $('dn-kq').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      })
-      .catch(function () {
-        nut.disabled = false;
-        nut.textContent = T('Lấy mã chuyển khoản');
-        $('dn-form').hidden = false;
-        hienLoi(T('Không gọi được máy chủ. Thử lại sau ít phút.'));
-      });
+    var soTien = Number($('dn-tien').value) || 0;
+    var ma = 'RV' + Math.floor(100000 + Math.random() * 900000);
+    var bankTen = 'Techcombank';
+    var bankSo = '1903 3228 2290 12';
+    var bankSoRaw = '19033228229012';
+    var bankChu = 'DANG THI LAM';
+
+    var qrUrl = 'https://img.vietqr.io/image/970407-' + bankSoRaw + '-compact2.png?addInfo=' + encodeURIComponent(ma) + '&accountName=' + encodeURIComponent(bankChu);
+    if (soTien > 0) {
+      qrUrl += '&amount=' + soTien;
+    }
+
+    setTimeout(function () {
+      nut.disabled = false;
+      nut.textContent = T('Lấy mã chuyển khoản');
+
+      $('dn-ma').textContent = ma;
+      $('dn-nh').textContent = bankTen;
+      $('dn-so').textContent = bankSo;
+      $('dn-chu').textContent = bankChu;
+      $('dn-sotien').textContent = soTien > 0 ? tien(soTien) : T('Tùy tâm (nhập trên app)');
+
+      var qrImg = $('dn-qr');
+      if (qrImg) {
+        qrImg.setAttribute('src', qrUrl);
+        qrImg.onerror = function () {
+          this.src = 'assets/img/qr-techcombank.jpg';
+        };
+        qrImg.hidden = false;
+      }
+
+      $('dn-form').hidden = true;
+      $('dn-kq').hidden = false;
+      $('dn-tt').textContent = T('Vui lòng quét mã QR hoặc chuyển khoản với nội dung: ') + ma;
+      soLanHoi = 0;
+      if (hen) { clearTimeout(hen); }
+      hen = setTimeout(function () { hoiTrangThai(ma); }, NHIP_HOI);
+      $('dn-kq').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, 200);
   }
 
   // Thân yêu cầu tạo mã. `cho_ky` CHỈ gửi khi ô lựa chọn đang hiện (trong cửa sổ gia hạn):
