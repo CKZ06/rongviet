@@ -140,42 +140,8 @@
     <div class="dn-hai">
       <div class="dn-hai__viec">
 
-        <div class="the dn-thu">
-          <label class="dn-thu__nhan" for="dn-keo-so">Drag to preview or type an amount</label>
-          <input class="dn-thu__so so" id="dn-keo-so" type="text" inputmode="numeric" autocomplete="off" spellcheck="false" value="—">
-
-          <input type="range" id="dn-keo" class="dn-keo" min="0" max="100" step="1" value="0" aria-label="Drag to preview an amount" aria-describedby="dn-thu-kq">
-
-          <svg class="dn-thuoc" viewbox="0 0 100 6" preserveaspectratio="none" aria-hidden="true" focusable="false">
-            <rect class="dn-thuoc__nen" x="0" y="2" width="100" height="2"></rect>
-            <rect class="dn-thuoc__dat" id="dn-thuoc-dat" x="0" y="2" width="0" height="2"></rect>
-            <rect class="dn-thuoc__moc" id="dn-moc1" x="0" y="0" width="0.6" height="6"></rect>
-            <rect class="dn-thuoc__moc" id="dn-moc2" x="0" y="0" width="0.6" height="6"></rect>
-            <rect class="dn-thuoc__moc" id="dn-moc3" x="0" y="0" width="0" height="6"></rect>
-            <rect class="dn-thuoc__moc" id="dn-moc0" x="0" y="0" width="0" height="6"></rect>
-          </svg>
-
-          <p class="dn-thu__ten" id="dn-thu-ten">&nbsp;</p>
-          <ul class="dn-thu__kq" id="dn-thu-kq">
-            <li><span class="dn-thu__k">Garage slots</span> <b class="so" id="dn-thu-o">—</b></li>
-            <li><span class="dn-thu__k">Queue priority</span> <b id="dn-thu-ut">—</b></li>
-            <li><span class="dn-thu__k">Dinosaur insurance</span> <b id="dn-thu-bh">—</b></li>
-            <li><span class="dn-thu__k">Pick a species even when it is full</span> <b id="dn-thu-cl">—</b></li>
-            <li id="dn-thu-mau-li" hidden=""><span class="dn-thu__k">Dinosaur colour sets</span> <b id="dn-thu-mau">—</b></li>
-            <li id="dn-thu-grad-li" hidden=""><span class="dn-thu__k">Colour fade (!gradient)</span> <b id="dn-thu-grad">—</b></li>
-          </ul>
-          <p class="dim nho dn-thu__ghi">
-            Rewards are granted back by an admin and counted over your total from the last
-            <b><span id="dn-so-ngay">—</span> days</b>. Each donation stays valid for that many
-            days from the moment you transfer.
-          </p>
-          <div class="hang-nut">
-            <button type="button" class="btn btn--nho" id="dn-thu-dung">Use this amount</button>
-          </div>
-        </div>
-
-        <div class="the dn-form" id="dn-form">
-          <!-- Official bank account information -->
+        <!-- Official bank account information & Quick select amounts -->
+        <div class="the" style="margin-bottom: 1.25rem;">
           <div class="dn-tk-chinh">
             <div class="dn-tk-chinh__trai">
               <img src="../assets/img/qr-techcombank.jpg" alt="Techcombank QR DANG THI LAM" class="dn-tk-chinh__qr-mini" id="dn-mini-qr" title="Click to zoom QR code">
@@ -184,32 +150,15 @@
                   <span class="dn-tk-chinh__nh">TECHCOMBANK</span>
                   <span class="dn-tk-chinh__tag">Official Account</span>
                 </div>
-                <span class="dn-tk-chinh__stk so">1903 3228 2290 12</span>
+                <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap;">
+                  <span class="dn-tk-chinh__stk so" id="dn-stk-chinh">1903 3228 2290 12</span>
+                  <button type="button" class="btn btn--nho dn-chep" data-chep="dn-stk-chinh" style="padding: 2px 10px; font-size: 0.8rem; background: rgba(255,255,255,0.08);">📋 Copy STK</button>
+                </div>
                 <span class="dn-tk-chinh__ten">DANG THI LAM</span>
               </div>
             </div>
             <button type="button" class="btn btn--nho" id="dn-xem-qr-goc">View QR</button>
           </div>
-
-          <p class="dn-ai" id="dn-ai">
-            <span id="dn-ai-chua" hidden="">
-              Not logged in: you can still donate, but you <b>will not receive rewards</b>.
-              <a href="/dang-nhap?ve=/en/donate">Log in with Steam</a>
-            </span>
-            <span id="dn-ai-roi" hidden="">Logged in as: <b id="dn-ai-ten">—</b></span>
-            <span id="dn-han" hidden=""></span>
-          </p>
-          <fieldset class="dn-cho" id="dn-cho" hidden="">
-            <legend class="dn-cho__td">This donation is for</legend>
-            <label class="dn-tick">
-              <input type="radio" name="dn-cho-ky" value="sau" checked="">
-              <span><b>Renewing insurance, new cycle starts now</b></span>
-            </label>
-            <label class="dn-tick">
-              <input type="radio" name="dn-cho-ky" value="nay">
-              <span><b>Adding to the current cycle</b></span>
-            </label>
-          </fieldset>
 
           <!-- Quick select donation amounts from 50k VND & Custom -->
           <div class="dn-nhanh-wrap">
@@ -256,6 +205,62 @@
               </button>
             </div>
           </div>
+        </div>
+
+        <div class="the dn-thu">
+          <label class="dn-thu__nhan" for="dn-keo-so">Drag to preview or type an amount</label>
+          <input class="dn-thu__so so" id="dn-keo-so" type="text" inputmode="numeric" autocomplete="off" spellcheck="false" value="150.000 ₫">
+
+          <input type="range" id="dn-keo" class="dn-keo" min="0" max="100" step="1" value="0" aria-label="Drag to preview an amount" aria-describedby="dn-thu-kq">
+
+          <svg class="dn-thuoc" viewbox="0 0 100 6" preserveaspectratio="none" aria-hidden="true" focusable="false">
+            <rect class="dn-thuoc__nen" x="0" y="2" width="100" height="2"></rect>
+            <rect class="dn-thuoc__dat" id="dn-thuoc-dat" x="0" y="2" width="0" height="2"></rect>
+            <rect class="dn-thuoc__moc" id="dn-moc1" x="0" y="0" width="0.6" height="6"></rect>
+            <rect class="dn-thuoc__moc" id="dn-moc2" x="0" y="0" width="0.6" height="6"></rect>
+            <rect class="dn-thuoc__moc" id="dn-moc3" x="0" y="0" width="0" height="6"></rect>
+            <rect class="dn-thuoc__moc" id="dn-moc0" x="0" y="0" width="0" height="6"></rect>
+          </svg>
+
+          <p class="dn-thu__ten" id="dn-thu-ten">&nbsp;</p>
+          <ul class="dn-thu__kq" id="dn-thu-kq">
+            <li><span class="dn-thu__k">Garage slots</span> <b class="so" id="dn-thu-o">10</b></li>
+            <li><span class="dn-thu__k">Queue priority</span> <b id="dn-thu-ut">—</b></li>
+            <li><span class="dn-thu__k">Dinosaur insurance</span> <b id="dn-thu-bh">—</b></li>
+            <li><span class="dn-thu__k">Pick a species even when it is full</span> <b id="dn-thu-cl">—</b></li>
+            <li id="dn-thu-mau-li" hidden=""><span class="dn-thu__k">Dinosaur colour sets</span> <b id="dn-thu-mau">—</b></li>
+            <li id="dn-thu-grad-li" hidden=""><span class="dn-thu__k">Colour fade (!gradient)</span> <b id="dn-thu-grad">—</b></li>
+          </ul>
+          <p class="dim nho dn-thu__ghi">
+            Rewards are granted back by an admin and counted over your total from the last
+            <b><span id="dn-so-ngay">30</span> days</b>. Each donation stays valid for that many
+            days from the moment you transfer.
+          </p>
+          <div class="hang-nut">
+            <button type="button" class="btn btn--nho" id="dn-thu-dung">Use this amount</button>
+          </div>
+        </div>
+
+        <div class="the dn-form" id="dn-form">
+          <p class="dn-ai" id="dn-ai">
+            <span id="dn-ai-chua" hidden="">
+              Not logged in: you can still donate, but you <b>will not receive rewards</b>.
+              <a href="/dang-nhap?ve=/en/donate">Log in with Steam</a>
+            </span>
+            <span id="dn-ai-roi" hidden="">Logged in as: <b id="dn-ai-ten">—</b></span>
+            <span id="dn-han" hidden=""></span>
+          </p>
+          <fieldset class="dn-cho" id="dn-cho" hidden="">
+            <legend class="dn-cho__td">This donation is for</legend>
+            <label class="dn-tick">
+              <input type="radio" name="dn-cho-ky" value="sau" checked="">
+              <span><b>Renewing insurance, new cycle starts now</b></span>
+            </label>
+            <label class="dn-tick">
+              <input type="radio" name="dn-cho-ky" value="nay">
+              <span><b>Adding to the current cycle</b></span>
+            </label>
+          </fieldset>
 
           <div class="dn-o">
             <div class="dn-o__label-hang">

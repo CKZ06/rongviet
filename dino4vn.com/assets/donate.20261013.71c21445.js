@@ -26,7 +26,38 @@
   var TOI_DA_HOI = 150;         // ~10 phút rồi thôi, đừng gõ cửa mãi
 
   var $ = function (id) { return document.getElementById(id); };
-  var LUAT = null;
+  var DEFAULT_LUAT = {
+    o_mac_dinh: 3,
+    o_toi_da: 98,
+    muc1_nguong: 150000,
+    muc1_them_o: 7,
+    muc2_nguong: 300000,
+    muc3_nguong: 450000,
+    buoc_o: 10000,
+    nhan_toi_thieu: 20000,
+    keo_toi_da: 5000000,
+    keo_giua: 500000,
+    keo_buoc_xa: 100000,
+    nhap_toi_da: 100000000,
+    loa_giay: 30,
+    uu_tien_muc: 2,
+    bao_hiem_muc: 2,
+    chon_loai_muc: 3,
+    so_ngay_hieu_luc: 30,
+    gia_han_ngay: 5,
+    bh_luot_chu_ky: 3,
+    skin_nguong: 50000,
+    skin_bo_0: 9999,
+    skin_bo_1: 9999,
+    skin_bo_2: 9999,
+    skin_bo_3: 9999,
+    skin_tudo_bac: 0,
+    skin_tuap_bac: 0,
+    gradient_bac: 3,
+    nguong_chat: false,
+    ten_muc: { "1": "Góp gạo", "2": "Góp thịt", "3": "Góp PC" }
+  };
+  var LUAT = DEFAULT_LUAT;
   var dangXem = 'ngay';
   var duLieu = null;
 
@@ -653,7 +684,7 @@
       .then(function (d) {
         if (!d) { return; }
         duLieu = d;
-        if (!LUAT && d.luat) { apLuat(d); }
+        if (d.luat) { apLuat(d); }
         veBang();
         $('dn-tuoi').textContent = '';
         // Chờ biết ai đang xem rồi mới xét quà: đồng hạng nhất thì ưu tiên hàng của họ.
@@ -832,6 +863,7 @@
       }
     });
 
+    apLuat({ luat: DEFAULT_LUAT });
     taiBang();
 
     // 🔴 TỰ LÀM MỚI. Bản đầu gọi `taiBang()` đúng một lần lúc mở trang, nên một tab
