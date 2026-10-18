@@ -11,7 +11,11 @@ module.exports = async function handler(req, res) {
         return res.status(405).json({ ok: false, error: 'Method Not Allowed' });
     }
 
-    const { so_tien, loi_nhan, an_danh, dong_y_dieu_khoan, cho_ky } = req.body || {};
+    let body = req.body;
+    if (typeof body === 'string') {
+        try { body = JSON.parse(body); } catch (e) {}
+    }
+    const { so_tien, loi_nhan, an_danh, dong_y_dieu_khoan, cho_ky } = body || {};
     if (!dong_y_dieu_khoan) {
         return res.status(400).json({ ok: false, err: 'chua_dong_y_dieu_khoan' });
     }
