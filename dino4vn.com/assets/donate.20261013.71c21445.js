@@ -245,6 +245,30 @@
 
     if (!dangGo) { $('dn-keo-so').value = tien(soThu); }
     veThu(soThu);
+    capNhatNutNhanh(soThu);
+  }
+
+  function capNhatNutNhanh(t) {
+    var nuts = document.querySelectorAll('.dn-nut-muc');
+    if (!nuts.length) { return; }
+    var daChon = false;
+    nuts.forEach(function (nut) {
+      var tienNut = Number(nut.getAttribute('data-tien')) || 0;
+      if (tienNut > 0 && tienNut === t) {
+        nut.classList.add('dn-nut-muc--active');
+        daChon = true;
+      } else {
+        nut.classList.remove('dn-nut-muc--active');
+      }
+    });
+    var nutTuyTam = $('dn-nut-tuytam');
+    if (nutTuyTam) {
+      if (!daChon) {
+        nutTuyTam.classList.add('dn-nut-muc--active');
+      } else {
+        nutTuyTam.classList.remove('dn-nut-muc--active');
+      }
+    }
   }
 
   // Giữ tên cũ: `apLuat()` và chỗ khác đang gọi.
@@ -394,12 +418,14 @@
         $('dn-nh').textContent = d.nganHang.ten;
         $('dn-so').textContent = d.nganHang.so;
         $('dn-chu').textContent = d.nganHang.chu || '—';
-        $('dn-sotien').textContent = d.soTien ? tien(d.soTien) : T('bạn tự nhập');
-        if (d.qr) {
-          $('dn-qr').setAttribute('src', d.qr);
-          $('dn-qr').hidden = false;
-        } else {
-          $('dn-qr').hidden = true;     // thiếu thư viện QR: vẫn chuyển khoản tay được
+        $('dn-sotien').textContent = d.soTien ? tien(d.soTien) : T('Tùy tâm (nhập trên app)');
+        var qrImg = $('dn-qr');
+        if (qrImg) {
+          qrImg.setAttribute('src', d.qr || 'assets/img/qr-techcombank.jpg');
+          qrImg.onerror = function () {
+            this.src = 'assets/img/qr-techcombank.jpg';
+          };
+          qrImg.hidden = false;
         }
         if (d.lyDoNhan) {
           hienLoi(T('Lời nhắn không hiển thị được, phần còn lại vẫn bình thường.'));
@@ -642,6 +668,116 @@
   // nên nhịp dày là nhân lên theo số trang đang mở.
   var NHIP_BANG = 15000;
 
+  function caiDatNutNhanh() {
+    var nuts = document.querySelectorAll('.dn-nut-muc');
+    nuts.forEach(function (nut) {
+      nut.addEventListener('click', function () {
+        var tienNut = Number(nut.getAttribute('data-tien')) || 0;
+        if (tienNut > 0) {
+          $('dn-tien').value = String(tienNut);
+          datThu(tienNut, false);
+        } else {
+          // Tùy tâm: xoá active các nút mốc, bật active nút Tùy tâm
+          nuts.forEach(function (n) { n.classList.remove('dn-nut-muc--active'); });
+          nut.classList.add('dn-nut-muc--active');
+          var oTien = $('dn-tien');
+          oTien.focus();
+          oTien.select();
+        }
+      });
+    });
+  }
+
+  function caiDatSaoChep() {
+    document.querySelectorAll('[data-chep]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var id = btn.getAttribute('data-chep');
+        var el = $(id);
+        if (!el) { return; }
+        var text = (el.textContent || '').trim();
+        if (id === 'dn-so') {
+          text = text.replace(/\s+/g, '');
+        }
+        function daChepXong() {
+          var cu = btn.textContent;
+          btn.textContent = '✓ ' + T('Đã chép');
+          btn.classList.add('dn-chep--xong');
+          setTimeout(function () {
+            btn.textContent = cu;
+            btn.classList.remove('dn-chep--xong');
+          }, 2000);
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(daChepXong).catch(function () {
+            fallbackChep(text, daChepXong);
+          });
+        } else {
+          fallbackChep(text, daChepXong);
+        }
+      });
+    });
+  }
+
+  function fallbackChep(text, cb) {
+    var t = document.createElement('textarea');
+    t.value = text;
+    t.setAttribute('class', 'skip');
+    document.body.appendChild(t);
+    t.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(t);
+    if (cb) { cb(); }
+  }
+
+  function caiDatModalQr() {
+    var moBtn = $('dn-xem-qr-goc');
+    var moBtn2 = $('dn-qr-goc-nut');
+    var modal = $('dn-modal-qr');
+    var dongBtn = $('dn-modal-dong');
+    var doiSoBtn = $('dn-doi-so');
+    var taiQrBtn = $('dn-tai-qr');
+
+    function moModal() {
+      if (modal) { modal.hidden = false; }
+    }
+    function dongModal() {
+      if (modal) { modal.hidden = true; }
+    }
+
+    if (moBtn) { moBtn.addEventListener('click', moModal); }
+    var miniQr = $('dn-mini-qr');
+    if (miniQr) { miniQr.addEventListener('click', moModal); }
+    if (moBtn2) { moBtn2.addEventListener('click', moModal); }
+    if (dongBtn) { dongBtn.addEventListener('click', dongModal); }
+    if (modal) {
+      modal.addEventListener('click', function (e) {
+        if (e.target === modal) { dongModal(); }
+      });
+    }
+
+    if (doiSoBtn) {
+      doiSoBtn.addEventListener('click', function () {
+        $('dn-kq').hidden = true;
+        $('dn-form').hidden = false;
+        $('dn-tien').focus();
+      });
+    }
+
+    if (taiQrBtn) {
+      taiQrBtn.addEventListener('click', function () {
+        var qrImg = $('dn-qr');
+        if (!qrImg || !qrImg.src) { return; }
+        var a = document.createElement('a');
+        a.href = qrImg.src;
+        a.download = 'QR_Techcombank_DangThiLam_RongViet.jpg';
+        a.target = '_blank';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    }
+  }
+
   // ── khởi động ────────────────────────────────────────────────────────────
   function batDau() {
     $('dn-keo').addEventListener('input', capNhatKeo);
@@ -679,6 +815,9 @@
       $('dn-gui').disabled = !$('dn-dk').checked;
     });
     $('dn-gui').addEventListener('click', layMa);
+    caiDatNutNhanh();
+    caiDatSaoChep();
+    caiDatModalQr();
     $('dn-tab-ngay').addEventListener('click', function () { doiTab('ngay'); });
     $('dn-tab-thang').addEventListener('click', function () { doiTab('thang'); });
 

@@ -1,0 +1,539 @@
+{
+  "schema": 1,
+  "builtAt": 1792323062,
+  "luat": {
+    "o_mac_dinh": 3,
+    "o_toi_da": 98,
+    "muc1_nguong": 150000,
+    "muc1_them_o": 7,
+    "muc2_nguong": 300000,
+    "muc3_nguong": 450000,
+    "buoc_o": 10000,
+    "nhan_toi_thieu": 20000,
+    "keo_toi_da": 5000000,
+    "keo_giua": 500000,
+    "keo_buoc_xa": 100000,
+    "nhap_toi_da": 100000000,
+    "loa_giay": 30,
+    "uu_tien_muc": 2,
+    "bao_hiem_muc": 2,
+    "chon_loai_muc": 3,
+    "so_ngay_hieu_luc": 30,
+    "gia_han_ngay": 5,
+    "bh_luot_chu_ky": 3,
+    "skin_nguong": 50000,
+    "skin_bo_0": 9999,
+    "skin_bo_1": 9999,
+    "skin_bo_2": 9999,
+    "skin_bo_3": 9999,
+    "skin_tudo_bac": 0,
+    "skin_tuap_bac": 0,
+    "gradient_bac": 3,
+    "nguong_chat": false,
+    "ten_muc": {
+      "1": "Góp gạo",
+      "2": "Góp thịt",
+      "3": "Góp PC"
+    },
+    "ten_skin": "Góp nước",
+    "skin_hien": false,
+    "gradient_hien": false,
+    "skin_vo_han": 9999
+  },
+  "bangMuc": [
+    {
+      "muc": 1,
+      "ten": "Góp gạo",
+      "nguong": 150000,
+      "o_gara": 10,
+      "uu_tien": false,
+      "bao_hiem": false,
+      "chon_loai": false,
+      "quyen": [
+        "10 ô gara"
+      ]
+    },
+    {
+      "muc": 2,
+      "ten": "Góp thịt",
+      "nguong": 300000,
+      "o_gara": 10,
+      "uu_tien": true,
+      "bao_hiem": true,
+      "chon_loai": false,
+      "quyen": [
+        "10 ô gara, góp thêm mỗi 10.000 ₫ được thêm 1 ô (tối đa 98 ô)",
+        "Ưu tiên xếp hàng khi server đầy",
+        "Bảo hiểm khủng long: 3 lượt mỗi 30 ngày"
+      ]
+    },
+    {
+      "muc": 3,
+      "ten": "Góp PC",
+      "nguong": 450000,
+      "o_gara": 25,
+      "uu_tien": true,
+      "bao_hiem": true,
+      "chon_loai": true,
+      "quyen": [
+        "25 ô gara, góp thêm mỗi 10.000 ₫ được thêm 1 ô (tối đa 98 ô)",
+        "Ưu tiên xếp hàng khi server đầy",
+        "Bảo hiểm khủng long: 3 lượt mỗi 30 ngày",
+        "Chọn loài dù loài đó đã đủ trần"
+      ]
+    }
+  ],
+  "dkBan": "dk-2026-10-18",
+  "nganHang": {
+    "ten": "Techcombank",
+    "bin": "970407",
+    "so": "1903 3228 2290 12",
+    "chu": "DANG THI LAM"
+  },
+  "ngay": "2026-10-18",
+  "thang": "2026-10",
+  "topNgay": [
+    {
+      "ten": "T-REX Ăn Chay",
+      "soTien": 3000000,
+      "steam4": "0094",
+      "khi": 1792306884,
+      "hang": 1
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 900000,
+      "steam4": "8617",
+      "khi": 1792266256,
+      "hang": 2
+    },
+    {
+      "ten": "CaCa",
+      "soTien": 450000,
+      "steam4": "0909",
+      "khi": 1792294286,
+      "hang": 3
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 450000,
+      "steam4": "2349",
+      "khi": 1792295798,
+      "hang": 4
+    },
+    {
+      "ten": "yb483913",
+      "soTien": 330000,
+      "steam4": "5178",
+      "khi": 1792315370,
+      "hang": 5
+    },
+    {
+      "ten": "GAO BAC",
+      "soTien": 310000,
+      "steam4": "8077",
+      "khi": 1792298076,
+      "hang": 6
+    },
+    {
+      "ten": "AnhNguyen",
+      "soTien": 300000,
+      "steam4": "8003",
+      "khi": 1792256465,
+      "hang": 7
+    },
+    {
+      "ten": "Anora",
+      "soTien": 300000,
+      "steam4": "8576",
+      "khi": 1792261535,
+      "hang": 8
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 300000,
+      "khi": 1792266077,
+      "hang": 9
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 300000,
+      "steam4": "4119",
+      "khi": 1792273454,
+      "hang": 10
+    },
+    {
+      "ten": "Kền kền",
+      "soTien": 300000,
+      "steam4": "1167",
+      "khi": 1792291775,
+      "hang": 11
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 300000,
+      "steam4": "0968",
+      "khi": 1792297144,
+      "hang": 12
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 300000,
+      "steam4": "7047",
+      "khi": 1792302671,
+      "hang": 13
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 300000,
+      "steam4": "8970",
+      "khi": 1792321956,
+      "hang": 14
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 150000,
+      "steam4": "1261",
+      "khi": 1792269585,
+      "hang": 15
+    }
+  ],
+  "topThang": [
+    {
+      "ten": "T-REX Ăn Chay",
+      "soTien": 80777777,
+      "steam4": "0094",
+      "khi": 1792306884,
+      "hang": 1
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 7850000,
+      "steam4": "8617",
+      "khi": 1792266256,
+      "hang": 2
+    },
+    {
+      "ten": "Tauruss",
+      "soTien": 6150000,
+      "steam4": "3940",
+      "khi": 1792253614,
+      "hang": 3
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 3300000,
+      "steam4": "6453",
+      "khi": 1792066827,
+      "hang": 4
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 2866666,
+      "steam4": "9173",
+      "khi": 1792241001,
+      "hang": 5
+    },
+    {
+      "ten": "Alex Duy",
+      "soTien": 2650000,
+      "steam4": "4623",
+      "khi": 1792073789,
+      "hang": 6
+    },
+    {
+      "ten": "Car98",
+      "soTien": 1855554,
+      "steam4": "3517",
+      "khi": 1792145443,
+      "hang": 7
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 1500000,
+      "steam4": "3384",
+      "khi": 1792163295,
+      "hang": 8
+    },
+    {
+      "ten": "Sâu Sâu",
+      "soTien": 1450000,
+      "steam4": "0945",
+      "khi": 1792083548,
+      "hang": 9
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 1050000,
+      "steam4": "7906",
+      "khi": 1792044531,
+      "hang": 10
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 1000000,
+      "steam4": "1748",
+      "khi": 1791949736,
+      "hang": 11
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 910000,
+      "steam4": "2282",
+      "khi": 1791568654,
+      "hang": 12
+    },
+    {
+      "ten": "EM GẤU TỚI CHƠI",
+      "soTien": 900000,
+      "steam4": "4654",
+      "khi": 1791823362,
+      "hang": 13
+    },
+    {
+      "ten": "EnVy",
+      "soTien": 900000,
+      "steam4": "8037",
+      "khi": 1792076604,
+      "hang": 14
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 900000,
+      "steam4": "2349",
+      "khi": 1792295798,
+      "hang": 15
+    },
+    {
+      "ten": "[HIN] Na iu",
+      "soTien": 760000,
+      "steam4": "6140",
+      "khi": 1792225637,
+      "hang": 16
+    },
+    {
+      "ten": "Anora",
+      "soTien": 760000,
+      "steam4": "8576",
+      "khi": 1792261535,
+      "hang": 17
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 750000,
+      "steam4": "0669",
+      "khi": 1791817319,
+      "hang": 18
+    },
+    {
+      "ten": "Game Over",
+      "soTien": 750000,
+      "steam4": "1234",
+      "khi": 1791941223,
+      "hang": 19
+    },
+    {
+      "ten": "ACB BANK",
+      "soTien": 750000,
+      "steam4": "3534",
+      "khi": 1792096885,
+      "hang": 20
+    }
+  ],
+  "chayChu": [
+    {
+      "ten": "Ẩn danh",
+      "soTien": 300000,
+      "steam4": "8970",
+      "khi": 1792321956
+    },
+    {
+      "ten": "yb483913",
+      "soTien": 330000,
+      "steam4": "5178",
+      "khi": 1792315370
+    },
+    {
+      "ten": "xixon",
+      "soTien": 50000,
+      "steam4": "3729",
+      "loiNhan": "Chúc mọi người quánh nhao dui dẻ",
+      "khi": 1792310930
+    },
+    {
+      "ten": "T-REX Ăn Chay",
+      "soTien": 3000000,
+      "steam4": "0094",
+      "loiNhan": "@@",
+      "khi": 1792306884
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 150000,
+      "steam4": "6698",
+      "khi": 1792304651
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 150000,
+      "steam4": "9457",
+      "khi": 1792302869
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 300000,
+      "steam4": "7047",
+      "khi": 1792302671
+    },
+    {
+      "ten": "GAO BAC",
+      "soTien": 300000,
+      "steam4": "8077",
+      "loiNhan": "chuc anh em buoi trua vui ve",
+      "khi": 1792298076
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 150000,
+      "steam4": "6616",
+      "loiNhan": "may con lon Alo",
+      "khi": 1792297538
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 300000,
+      "steam4": "0968",
+      "khi": 1792297144
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 450000,
+      "steam4": "2349",
+      "loiNhan": "Chúc ae chủ nhật chơi vui vê",
+      "khi": 1792295798
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 150000,
+      "khi": 1792295649
+    },
+    {
+      "ten": "CaCa",
+      "soTien": 450000,
+      "steam4": "0909",
+      "loiNhan": "TieuCaCa Tim Keo lo. cheo'''''",
+      "khi": 1792294286
+    },
+    {
+      "ten": "Kền kền",
+      "soTien": 300000,
+      "steam4": "1167",
+      "loiNhan": "Kền Kền yêu tất cả các e <3333",
+      "khi": 1792291775
+    },
+    {
+      "ten": "Cây Kẹo Ngọt",
+      "soTien": 150000,
+      "steam4": "7247",
+      "khi": 1792291265
+    },
+    {
+      "ten": "Dang185",
+      "soTien": 150000,
+      "steam4": "0369",
+      "loiNhan": "chuc ae buoi sang vuive",
+      "khi": 1792283432
+    },
+    {
+      "ten": "dangxuantruong04",
+      "soTien": 150000,
+      "steam4": "6261",
+      "loiNhan": "Mấy bé Pachi đi đường nhớ nhìn phía sau nhá",
+      "khi": 1792280799
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 300000,
+      "steam4": "4119",
+      "khi": 1792273454
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 150000,
+      "steam4": "1261",
+      "loiNhan": "Chúc ae sever chơi vui vẻ , dino4vn mãi đỉnh phím 1 =))",
+      "khi": 1792269585
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 900000,
+      "steam4": "8617",
+      "loiNhan": "may thang BANK con cay",
+      "khi": 1792266256
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 300000,
+      "khi": 1792266077
+    },
+    {
+      "ten": "Little Sicula",
+      "soTien": 20000,
+      "steam4": "9590",
+      "loiNhan": "MẤY TREX LỒNG KÍNH Ở HL RA CHAN TRIKE ĐI LÊU LÊU",
+      "khi": 1792261716
+    },
+    {
+      "ten": "ThắngShine",
+      "soTien": 20000,
+      "steam4": "1177",
+      "loiNhan": "Rex Lồng kính Quang Lxb NGU ra hồ Hl đi đừng trốn nữa",
+      "khi": 1792261689
+    },
+    {
+      "ten": "Anora",
+      "soTien": 300000,
+      "steam4": "8576",
+      "loiNhan": "REX G lấy số",
+      "khi": 1792261535
+    },
+    {
+      "ten": "AnhNguyen",
+      "soTien": 300000,
+      "steam4": "8003",
+      "loiNhan": "Anh guộc Tauruss mãi đỉnh mãi đỉnh, quá legit",
+      "khi": 1792256465
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 450000,
+      "steam4": "3867",
+      "khi": 1792255299
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 300000,
+      "steam4": "5950",
+      "khi": 1792254669
+    },
+    {
+      "ten": "LyLy_-",
+      "soTien": 150000,
+      "steam4": "4431",
+      "khi": 1792254334
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 150000,
+      "steam4": "1121",
+      "khi": 1792253875
+    },
+    {
+      "ten": "Ẩn danh",
+      "soTien": 150000,
+      "steam4": "5138",
+      "loiNhan": "khô gà lá chanh ăn cứt t nè",
+      "khi": 1792253644
+    }
+  ]
+}

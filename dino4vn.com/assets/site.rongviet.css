@@ -2519,3 +2519,310 @@ body {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   GIAO DIỆN ỦNG HỘ NHANH & QR TECHCOMBANK (2026-10-18)
+   ══════════════════════════════════════════════════════════════════════════ */
+.dn-tk-chinh {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  background: var(--tan-la);
+  border: 1px solid var(--duong-ke-sang);
+  border-radius: var(--r-vt);
+  padding: 12px 16px;
+  margin-bottom: 14px;
+}
+.dn-tk-chinh__trai {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.dn-tk-chinh__qr-mini {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  object-fit: cover;
+  background: #fff;
+  padding: 2px;
+  cursor: pointer;
+  transition: transform .2s ease;
+}
+.dn-tk-chinh__qr-mini:hover {
+  transform: scale(1.08);
+}
+.dn-tk-chinh__thongtin {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.dn-tk-chinh__hang {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.dn-tk-chinh__nh {
+  font-weight: 800;
+  color: #E11B22;
+  letter-spacing: .04em;
+  font-size: var(--b--1);
+}
+.dn-tk-chinh__tag {
+  font-size: .72rem;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--ho-phach) 25%, transparent);
+  color: var(--ho-phach-sang);
+  font-weight: 600;
+}
+.dn-tk-chinh__stk {
+  font-size: var(--b-1);
+  font-weight: 800;
+  color: var(--da-voi);
+  letter-spacing: .05em;
+}
+.dn-tk-chinh__ten {
+  font-size: var(--b--2);
+  color: var(--reu);
+  font-weight: 600;
+}
+
+/* ── Cụm nút chọn nhanh mức ủng hộ ── */
+.dn-nhanh-wrap {
+  display: grid;
+  gap: 8px;
+  margin-block: 4px 6px;
+}
+.dn-nhanh__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.dn-nhanh__nhan {
+  font-size: var(--b--1);
+  color: var(--reu);
+  font-weight: 600;
+}
+.dn-nhanh__sub {
+  font-size: var(--b--2);
+  color: var(--reu-toi);
+}
+.dn-nhanh-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+@media (max-width: 600px) {
+  .dn-nhanh-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 400px) {
+  .dn-nhanh-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.dn-nut-muc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 6px;
+  background: var(--rung-sau);
+  border: 1px solid var(--duong-ke);
+  border-radius: var(--r-dk);
+  cursor: pointer;
+  transition: all .18s ease;
+  font: inherit;
+  user-select: none;
+  min-height: 52px;
+}
+.dn-nut-muc:hover {
+  background: var(--tan-la-2);
+  border-color: var(--ho-phach);
+  transform: translateY(-1px);
+}
+.dn-nut-muc__so {
+  font-size: 0.98rem;
+  font-weight: 800;
+  font-family: var(--f-hien);
+  color: var(--da-voi);
+  line-height: 1.1;
+}
+.dn-nut-muc__tag {
+  font-size: 0.68rem;
+  color: var(--reu-toi);
+  margin-top: 2px;
+  white-space: nowrap;
+}
+.dn-nut-muc--active {
+  background: color-mix(in srgb, var(--ho-phach) 20%, var(--tan-la)) !important;
+  border-color: var(--ho-phach-sang) !important;
+  box-shadow: 0 0 10px rgba(34, 185, 130, 0.28);
+}
+.dn-nut-muc--active .dn-nut-muc__so {
+  color: var(--ho-phach-sang);
+}
+.dn-nut-muc--active .dn-nut-muc__tag {
+  color: var(--da-voi);
+  font-weight: 600;
+}
+.dn-nut-muc--tuytam {
+  border-style: dashed;
+}
+.dn-nut-muc--tuytam .dn-nut-muc__so {
+  color: #F59E0B;
+}
+.dn-nut-muc--tuytam.dn-nut-muc--active .dn-nut-muc__so {
+  color: #FBBF24;
+}
+
+/* ── Ô nhập số tiền tùy tâm ── */
+.dn-o__label-hang {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 6px;
+}
+.dn-o__ghi {
+  font-size: var(--b--2);
+  color: var(--reu-toi);
+}
+.dn-tien-nhap-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.dn-tien-nhap-box input {
+  padding-right: 50px !important;
+}
+.dn-tien-donvi {
+  position: absolute;
+  right: 14px;
+  font-size: var(--b--1);
+  font-weight: 700;
+  color: var(--reu);
+  pointer-events: none;
+}
+
+/* ── Nút chép và thẻ kết quả ── */
+.dn-kq__ma-hang {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.dn-chep {
+  padding: 4px 10px;
+  font-size: var(--b--2);
+}
+.dn-dd-chep {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.dn-chep-nho {
+  background: none;
+  border: 1px solid var(--duong-ke);
+  border-radius: 4px;
+  padding: 2px 6px;
+  color: var(--reu);
+  cursor: pointer;
+  font-size: .8rem;
+  transition: all .15s ease;
+}
+.dn-chep-nho:hover {
+  border-color: var(--ho-phach);
+  color: var(--da-voi);
+}
+.dn-chep--xong {
+  background: var(--ho-phach) !important;
+  color: var(--ho-phach-chu) !important;
+  border-color: var(--ho-phach-sang) !important;
+}
+.dn-kq__cot-qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.dn-kq__qr-nut {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.dn-kq__nut-quaylai {
+  margin-top: 6px;
+}
+
+/* ── Modal phóng to ảnh QR gốc ── */
+.dn-modal-qr {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.dn-modal-qr[hidden] {
+  display: none !important;
+}
+.dn-modal-qr__hop {
+  background: var(--tan-la);
+  border: 1px solid var(--duong-ke-sang);
+  border-radius: 14px;
+  padding: 20px;
+  max-width: 360px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+.dn-modal-qr__anh {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 10px;
+  background: #fff;
+  padding: 6px;
+}
+.dn-modal-qr__thongtin {
+  text-align: center;
+  display: grid;
+  gap: 4px;
+}
+.dn-modal-qr__tk {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--da-voi);
+  letter-spacing: .06em;
+}
+.dn-modal-qr__ten {
+  font-size: var(--b--1);
+  color: var(--reu);
+  font-weight: 600;
+}
+.dn-modal-qr__dong {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: 0;
+  color: var(--reu);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+.dn-modal-qr__dong:hover {
+  color: var(--da-voi);
+}

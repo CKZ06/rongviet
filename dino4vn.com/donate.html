@@ -183,6 +183,22 @@
 
         
         <div class="the dn-form" id="dn-form">
+          <!-- Thông tin tài khoản chính thức của khách -->
+          <div class="dn-tk-chinh">
+            <div class="dn-tk-chinh__trai">
+              <img src="assets/img/qr-techcombank.jpg" alt="Mã QR Techcombank DANG THI LAM" class="dn-tk-chinh__qr-mini" id="dn-mini-qr" title="Bấm để phóng to mã QR">
+              <div class="dn-tk-chinh__thongtin">
+                <div class="dn-tk-chinh__hang">
+                  <span class="dn-tk-chinh__nh">TECHCOMBANK</span>
+                  <span class="dn-tk-chinh__tag">Tài khoản chính thức</span>
+                </div>
+                <span class="dn-tk-chinh__stk so">1903 3228 2290 12</span>
+                <span class="dn-tk-chinh__ten">DANG THI LAM</span>
+              </div>
+            </div>
+            <button type="button" class="btn btn--nho" id="dn-xem-qr-goc">Xem QR</button>
+          </div>
+
           <p class="dn-ai" id="dn-ai">
             <span id="dn-ai-chua" hidden="">
               Chưa đăng nhập: vẫn góp được, nhưng <b>không nhận quà</b>.
@@ -192,7 +208,6 @@
             
             <span id="dn-han" hidden=""></span>
           </p>
-          
           
           <fieldset class="dn-cho" id="dn-cho" hidden="">
             <legend class="dn-cho__td">Khoản ủng hộ này dùng để</legend>
@@ -206,9 +221,61 @@
             </label>
           </fieldset>
 
+          <!-- Các mức ủng hộ chọn nhanh từ 50k trở lên & Tùy tâm -->
+          <div class="dn-nhanh-wrap">
+            <div class="dn-nhanh__head">
+              <label class="dn-nhanh__nhan">Mức ủng hộ chọn nhanh (từ 50k trở lên)</label>
+              <span class="dn-nhanh__sub">Chọn mức có sẵn hoặc chọn Tùy tâm</span>
+            </div>
+            <div class="dn-nhanh-grid" id="dn-nhanh-grid">
+              <button type="button" class="dn-nut-muc" data-tien="50000">
+                <span class="dn-nut-muc__so">50.000 ₫</span>
+                <span class="dn-nut-muc__tag">Góp nước</span>
+              </button>
+              <button type="button" class="dn-nut-muc" data-tien="100000">
+                <span class="dn-nut-muc__so">100.000 ₫</span>
+                <span class="dn-nut-muc__tag">Đồng hành</span>
+              </button>
+              <button type="button" class="dn-nut-muc dn-nut-muc--active" data-tien="150000">
+                <span class="dn-nut-muc__so">150.000 ₫</span>
+                <span class="dn-nut-muc__tag">Mốc 1 · Góp gạo</span>
+              </button>
+              <button type="button" class="dn-nut-muc" data-tien="200000">
+                <span class="dn-nut-muc__so">200.000 ₫</span>
+                <span class="dn-nut-muc__tag">Phát triển</span>
+              </button>
+              <button type="button" class="dn-nut-muc" data-tien="300000">
+                <span class="dn-nut-muc__so">300.000 ₫</span>
+                <span class="dn-nut-muc__tag">Mốc 2 · VIP</span>
+              </button>
+              <button type="button" class="dn-nut-muc" data-tien="500000">
+                <span class="dn-nut-muc__so">500.000 ₫</span>
+                <span class="dn-nut-muc__tag">Mốc 3 · Góp PC</span>
+              </button>
+              <button type="button" class="dn-nut-muc" data-tien="1000000">
+                <span class="dn-nut-muc__so">1.000.000 ₫</span>
+                <span class="dn-nut-muc__tag">Tài trợ vàng</span>
+              </button>
+              <button type="button" class="dn-nut-muc" data-tien="2000000">
+                <span class="dn-nut-muc__so">2.000.000 ₫</span>
+                <span class="dn-nut-muc__tag">Trùm server</span>
+              </button>
+              <button type="button" class="dn-nut-muc dn-nut-muc--tuytam" data-tien="0" id="dn-nut-tuytam">
+                <span class="dn-nut-muc__so">💝 Tùy tâm</span>
+                <span class="dn-nut-muc__tag">Giá tự nhập</span>
+              </button>
+            </div>
+          </div>
+
           <div class="dn-o">
-            <label for="dn-tien">Số tiền</label>
-            <input type="number" id="dn-tien" inputmode="numeric" min="1000" step="1000" autocomplete="off" placeholder="150000">
+            <div class="dn-o__label-hang">
+              <label for="dn-tien">Số tiền ủng hộ</label>
+              <span class="dn-o__ghi">Hoặc tự nhập số tiền tùy tâm</span>
+            </div>
+            <div class="dn-tien-nhap-box">
+              <input type="number" id="dn-tien" inputmode="numeric" min="1000" step="1000" autocomplete="off" placeholder="Nhập số tiền tùy tâm (ví dụ 50000)..." value="150000">
+              <span class="dn-tien-donvi">₫</span>
+            </div>
           </div>
 
           <div class="dn-o">
@@ -233,19 +300,39 @@
 
         
         <div class="the the--sang dn-kq" id="dn-kq" hidden="">
-          <div class="dn-kq__qr">
-            <img id="dn-qr" alt="Mã QR chuyển khoản" width="220" height="220">
+          <div class="dn-kq__cot-qr">
+            <div class="dn-kq__qr">
+              <img id="dn-qr" alt="Mã QR chuyển khoản Techcombank" width="220" height="220" src="assets/img/qr-techcombank.jpg">
+            </div>
+            <div class="dn-kq__qr-nut">
+              <button type="button" class="btn btn--nho" id="dn-tai-qr">Tải mã QR</button>
+              <button type="button" class="btn btn--nho" id="dn-qr-goc-nut">Xem QR gốc</button>
+            </div>
           </div>
           <div class="dn-kq__chu">
-            <p class="dn-kq__nhan">Nội dung chuyển khoản</p>
-            <p class="dn-kq__ma so" id="dn-ma">—</p>
+            <p class="dn-kq__nhan">Nội dung chuyển khoản (bắt buộc nhập đúng mã)</p>
+            <div class="dn-kq__ma-hang">
+              <p class="dn-kq__ma so" id="dn-ma">—</p>
+              <button type="button" class="btn btn--nho dn-chep" data-chep="dn-ma" title="Sao chép mã nội dung">Sao chép</button>
+            </div>
             <dl class="dn-kq__tk">
-              <dt>Ngân hàng</dt><dd id="dn-nh">—</dd>
-              <dt>Số tài khoản</dt><dd class="so" id="dn-so">—</dd>
-              <dt>Chủ tài khoản</dt><dd id="dn-chu">—</dd>
-              <dt>Số tiền</dt><dd class="so" id="dn-sotien">—</dd>
+              <dt>Ngân hàng</dt><dd id="dn-nh">Techcombank</dd>
+              <dt>Số tài khoản</dt>
+              <dd class="so dn-dd-chep">
+                <span id="dn-so">1903 3228 2290 12</span>
+                <button type="button" class="dn-chep-nho" data-chep="dn-so" title="Sao chép số tài khoản">📋</button>
+              </dd>
+              <dt>Chủ tài khoản</dt><dd id="dn-chu">DANG THI LAM</dd>
+              <dt>Số tiền</dt>
+              <dd class="so dn-dd-chep">
+                <span id="dn-sotien">—</span>
+                <button type="button" class="dn-chep-nho" data-chep="dn-sotien" title="Sao chép số tiền">📋</button>
+              </dd>
             </dl>
             <p class="dn-tt" id="dn-tt">Đang chờ chuyển khoản…</p>
+            <div class="dn-kq__nut-quaylai">
+              <button type="button" class="btn btn--nho" id="dn-doi-so">← Đổi số tiền / Nhập lại</button>
+            </div>
           </div>
         </div>
       </div>
@@ -296,6 +383,20 @@
     </nav>
   </div>
 </footer>
+
+<!-- Modal xem ảnh QR gốc Techcombank -->
+<div class="dn-modal-qr" id="dn-modal-qr" hidden="">
+  <div class="dn-modal-qr__hop">
+    <button type="button" class="dn-modal-qr__dong" id="dn-modal-dong" aria-label="Đóng">&times;</button>
+    <h3 style="margin:0; font-size: 1.15rem; color: var(--da-voi); font-family: var(--f-hien); text-transform: uppercase;">Mã QR Techcombank</h3>
+    <img src="assets/img/qr-techcombank.jpg" alt="QR Techcombank DANG THI LAM" class="dn-modal-qr__anh">
+    <div class="dn-modal-qr__thongtin">
+      <span class="dn-modal-qr__tk so">1903 3228 2290 12</span>
+      <span class="dn-modal-qr__ten">DANG THI LAM · TECHCOMBANK</span>
+    </div>
+    <a href="assets/img/qr-techcombank.jpg" download="QR_Techcombank_DangThiLam.jpg" class="btn btn--nho btn--chinh">Tải ảnh QR về máy</a>
+  </div>
+</div>
 
 <script type="module" src="beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"437c6c414292410ea02c291ceebeff71","r":1,"spa":2}' crossorigin="anonymous"></script>
 </body>

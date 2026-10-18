@@ -175,6 +175,22 @@
         </div>
 
         <div class="the dn-form" id="dn-form">
+          <!-- Official bank account information -->
+          <div class="dn-tk-chinh">
+            <div class="dn-tk-chinh__trai">
+              <img src="../assets/img/qr-techcombank.jpg" alt="Techcombank QR DANG THI LAM" class="dn-tk-chinh__qr-mini" id="dn-mini-qr" title="Click to zoom QR code">
+              <div class="dn-tk-chinh__thongtin">
+                <div class="dn-tk-chinh__hang">
+                  <span class="dn-tk-chinh__nh">TECHCOMBANK</span>
+                  <span class="dn-tk-chinh__tag">Official Account</span>
+                </div>
+                <span class="dn-tk-chinh__stk so">1903 3228 2290 12</span>
+                <span class="dn-tk-chinh__ten">DANG THI LAM</span>
+              </div>
+            </div>
+            <button type="button" class="btn btn--nho" id="dn-xem-qr-goc">View QR</button>
+          </div>
+
           <p class="dn-ai" id="dn-ai">
             <span id="dn-ai-chua" hidden="">
               Not logged in: you can still donate, but you <b>will not receive rewards</b>.
@@ -195,9 +211,61 @@
             </label>
           </fieldset>
 
+          <!-- Quick select donation amounts from 50k VND & Custom -->
+          <div class="dn-nhanh-wrap">
+            <div class="dn-nhanh__head">
+              <label class="dn-nhanh__nhan">Quick Select Amount (from 50k VND)</label>
+              <span class="dn-nhanh__sub">Pick a preset or choose Custom</span>
+            </div>
+            <div class="dn-nhanh-grid" id="dn-nhanh-grid">
+              <button type="button" class="dn-nut-muc" data-tien="50000">
+                <span class="dn-nut-muc__so">50.000 ₫</span>
+                <span class="dn-nut-muc__tag">Water tier</span>
+              </button>
+              <button type="button" class="dn-nut-muc" data-tien="100000">
+                <span class="dn-nut-muc__so">100.000 ₫</span>
+                <span class="dn-nut-muc__tag">Supporter</span>
+              </button>
+              <button type="button" class="dn-nut-muc dn-nut-muc--active" data-tien="150000">
+                <span class="dn-nut-muc__so">150.000 ₫</span>
+                <span class="dn-nut-muc__tag">Tier 1 · 10 slots</span>
+              </button>
+              <button type="button" class="dn-nut-muc" data-tien="200000">
+                <span class="dn-nut-muc__so">200.000 ₫</span>
+                <span class="dn-nut-muc__tag">Growth</span>
+              </button>
+              <button type="button" class="dn-nut-muc" data-tien="300000">
+                <span class="dn-nut-muc__so">300.000 ₫</span>
+                <span class="dn-nut-muc__tag">Tier 2 · VIP</span>
+              </button>
+              <button type="button" class="dn-nut-muc" data-tien="500000">
+                <span class="dn-nut-muc__so">500.000 ₫</span>
+                <span class="dn-nut-muc__tag">Tier 3 · PC fund</span>
+              </button>
+              <button type="button" class="dn-nut-muc" data-tien="1000000">
+                <span class="dn-nut-muc__so">1.000.000 ₫</span>
+                <span class="dn-nut-muc__tag">Gold sponsor</span>
+              </button>
+              <button type="button" class="dn-nut-muc" data-tien="2000000">
+                <span class="dn-nut-muc__so">2.000.000 ₫</span>
+                <span class="dn-nut-muc__tag">Diamond</span>
+              </button>
+              <button type="button" class="dn-nut-muc dn-nut-muc--tuytam" data-tien="0" id="dn-nut-tuytam">
+                <span class="dn-nut-muc__so">💝 Custom</span>
+                <span class="dn-nut-muc__tag">Any amount</span>
+              </button>
+            </div>
+          </div>
+
           <div class="dn-o">
-            <label for="dn-tien">Amount (VND)</label>
-            <input type="number" id="dn-tien" inputmode="numeric" min="1000" step="1000" autocomplete="off" placeholder="150000">
+            <div class="dn-o__label-hang">
+              <label for="dn-tien">Amount (VND)</label>
+              <span class="dn-o__ghi">Or enter custom amount</span>
+            </div>
+            <div class="dn-tien-nhap-box">
+              <input type="number" id="dn-tien" inputmode="numeric" min="1000" step="1000" autocomplete="off" placeholder="Enter custom amount (e.g. 50000)..." value="150000">
+              <span class="dn-tien-donvi">₫</span>
+            </div>
           </div>
 
           <div class="dn-o">
@@ -221,19 +289,39 @@
         </div>
 
         <div class="the the--sang dn-kq" id="dn-kq" hidden="">
-          <div class="dn-kq__qr">
-            <img id="dn-qr" alt="Bank transfer QR code" width="220" height="220">
+          <div class="dn-kq__cot-qr">
+            <div class="dn-kq__qr">
+              <img id="dn-qr" alt="Bank transfer QR code" width="220" height="220" src="../assets/img/qr-techcombank.jpg">
+            </div>
+            <div class="dn-kq__qr-nut">
+              <button type="button" class="btn btn--nho" id="dn-tai-qr">Download QR</button>
+              <button type="button" class="btn btn--nho" id="dn-qr-goc-nut">View original QR</button>
+            </div>
           </div>
           <div class="dn-kq__chu">
-            <p class="dn-kq__nhan">Transfer message</p>
-            <p class="dn-kq__ma so" id="dn-ma">—</p>
+            <p class="dn-kq__nhan">Transfer message (must be exact)</p>
+            <div class="dn-kq__ma-hang">
+              <p class="dn-kq__ma so" id="dn-ma">—</p>
+              <button type="button" class="btn btn--nho dn-chep" data-chep="dn-ma" title="Copy transfer code">Copy</button>
+            </div>
             <dl class="dn-kq__tk">
-              <dt>Bank</dt><dd id="dn-nh">—</dd>
-              <dt>Account number</dt><dd class="so" id="dn-so">—</dd>
-              <dt>Account holder</dt><dd id="dn-chu">—</dd>
-              <dt>Amount</dt><dd class="so" id="dn-sotien">—</dd>
+              <dt>Bank</dt><dd id="dn-nh">Techcombank</dd>
+              <dt>Account number</dt>
+              <dd class="so dn-dd-chep">
+                <span id="dn-so">1903 3228 2290 12</span>
+                <button type="button" class="dn-chep-nho" data-chep="dn-so" title="Copy account number">📋</button>
+              </dd>
+              <dt>Account holder</dt><dd id="dn-chu">DANG THI LAM</dd>
+              <dt>Amount</dt>
+              <dd class="so dn-dd-chep">
+                <span id="dn-sotien">—</span>
+                <button type="button" class="dn-chep-nho" data-chep="dn-sotien" title="Copy amount">📋</button>
+              </dd>
             </dl>
             <p class="dn-tt" id="dn-tt">Waiting for the transfer…</p>
+            <div class="dn-kq__nut-quaylai">
+              <button type="button" class="btn btn--nho" id="dn-doi-so">← Change amount / Edit</button>
+            </div>
           </div>
         </div>
       </div>
@@ -282,6 +370,20 @@
     </nav>
   </div>
 </footer>
+
+<!-- Modal to view original Techcombank QR -->
+<div class="dn-modal-qr" id="dn-modal-qr" hidden="">
+  <div class="dn-modal-qr__hop">
+    <button type="button" class="dn-modal-qr__dong" id="dn-modal-dong" aria-label="Close">&times;</button>
+    <h3 style="margin:0; font-size: 1.15rem; color: var(--da-voi); font-family: var(--f-hien); text-transform: uppercase;">Techcombank QR Code</h3>
+    <img src="../assets/img/qr-techcombank.jpg" alt="QR Techcombank DANG THI LAM" class="dn-modal-qr__anh">
+    <div class="dn-modal-qr__thongtin">
+      <span class="dn-modal-qr__tk so">1903 3228 2290 12</span>
+      <span class="dn-modal-qr__ten">DANG THI LAM · TECHCOMBANK</span>
+    </div>
+    <a href="../assets/img/qr-techcombank.jpg" download="QR_Techcombank_DangThiLam.jpg" class="btn btn--nho btn--chinh">Download QR image</a>
+  </div>
+</div>
 
 <script type="module" src="../beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"437c6c414292410ea02c291ceebeff71","r":1,"spa":2}' crossorigin="anonymous"></script>
 </body>
