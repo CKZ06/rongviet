@@ -399,8 +399,9 @@ img { max-width: 100%; height: auto; }
   font-variant-numeric: tabular-nums;
 }
 .nha-hero__dao { display: block; color: var(--reu); }
-.nha-hero__phu { margin: 0; color: var(--reu); font-variant-numeric: tabular-nums; min-height: 3.3em; }
-.nha-hero__phu .dim { display: block; }   /* "Cập nhật lúc…" luôn một dòng riêng: giữ chỗ đúng hai dòng */
+.nha-hero__phu { margin: 0; color: var(--reu); font-variant-numeric: tabular-nums; min-height: 1.6em; }
+.nha-hero__phu #tth-phu, #tth-phu { display: none !important; }
+.nha-hero__phu .dim { display: block; }   /* "Cập nhật lúc…" luôn một dòng riêng */
 .nha-hero__gioi { margin: 0; font-size: var(--b-1); max-width: 44ch; }
 .nha-hero__luat { margin: 0; padding-top: 14px; border-top: 1px solid var(--duong-ke);
                   color: var(--reu); font-size: var(--b--1); max-width: 56ch; }
@@ -1877,6 +1878,7 @@ body.la-bando .chay { flex: 0 0 auto; }
    Đứng yên, một người mỗi lượt (chủ server chốt 2026-09-14) — `chay.js` đổi người mỗi
    8 giây. Không màu vàng: dải này không được tranh với nút chính của trang. */
 .chay { border-bottom: 1px solid var(--duong-ke); background: var(--rung-sau); }
+.chay[hidden] { display: none !important; }
 .chay__khung { display: flex; align-items: center; gap: 16px; min-height: 32px; }
 .chay__muc {
   flex: 1 1 auto; min-width: 0; margin: 0;

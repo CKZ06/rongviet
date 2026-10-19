@@ -122,14 +122,8 @@
          nhưng luôn nêu cả hai con số để không ai thấy bị giấu. */
       dat(chinh, d.players < 8 && trong !== null
         ? T('Còn {n} chỗ trống', { n: trong }) : T('{n} người đang chơi', { n: d.players }));
-      /* Có người xếp hàng thì "vào được ngay" là câu SAI — thay hẳn, không nối thêm. */
-      const cho = soCho(d);
-      if (cho) {
-        dat(phu, toi ? T('{d}/{toi}, {cho} người đang xếp hàng chờ vào', { d: d.players, toi, cho })
-          : T('{cho} người đang xếp hàng chờ vào', { cho }));
-      } else {
-        dat(phu, toi ? T('{d}/{toi}, vào được ngay, không mật khẩu', { d: d.players, toi }) : T('Vào được ngay'));
-      }
+      /* Ẩn dòng thông tin slot/mật khẩu theo yêu cầu */
+      dat(phu, '');
     }
     dat(meta, T('Cập nhật lúc {gio} giờ Việt Nam', { gio: hhmm(new Date(t)) }));
   }
