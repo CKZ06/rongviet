@@ -16,7 +16,7 @@ if (!fs.existsSync(DATA_DIR)) {
 
 // Bảng màu mặc định tự nhiên cho từng loài
 const DEFAULT_SKINS = {
-    'Spinosaurus': { body: '#52433d', underbelly: '#9e8c7c', pattern: '#362d29', eyes: '#c98a2c' },
+    'Spinosaurus': { body: '#38393b', underbelly: '#75787b', pattern: '#6e3b32', eyes: '#16a34a' },
     'Tyrannosaurus': { body: '#4a4039', underbelly: '#827364', pattern: '#2d251e', eyes: '#b87333' },
     'Triceratops': { body: '#595046', underbelly: '#8a7e6f', pattern: '#3d342a', eyes: '#a3702c' },
     'Carnotaurus': { body: '#613d30', underbelly: '#946c5a', pattern: '#3b2219', eyes: '#c2410c' },

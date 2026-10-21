@@ -126,12 +126,7 @@ async function tai3D() {
     if (!v) throw new Error("manifest thieu truong vendor");
     const three = await import(`/assets/vendor/${v}/three.module.min.js`);
     const { GLTFLoader } = await import(`/assets/vendor/${v}/GLTFLoader.js`);
-    let DRACOLoader = null;
-    try {
-      const mod = await import(`/assets/vendor/${v}/DRACOLoader.js`);
-      DRACOLoader = mod.DRACOLoader;
-    } catch(e) {}
-    return { three, GLTFLoader, DRACOLoader };
+    return { three, GLTFLoader };
   })();
   return napThuVien;
 }
@@ -987,7 +982,7 @@ function canhLaiKhung(boZoom) {
 /* ── Nạp mô hình ─────────────────────────────────────────────────────────── */
 
 async function taiMoHinh(slug, mh, mau, growth) {
-  const { three, GLTFLoader, DRACOLoader } = await tai3D();
+  const { three, GLTFLoader } = await tai3D();
   dungScene(three);
 
   trangThai("loading-model", "Đang tải mô hình…");
@@ -996,13 +991,7 @@ async function taiMoHinh(slug, mh, mau, growth) {
   // về sau và vẽ ĐÈ lên con đúng — không lỗi nào hiện ra, chỉ là mô hình sai. Kiểm token sau
   // MỌI `await`, và khi đã lạc hậu thì bỏ đi chứ KHÔNG dispose tài nguyên của lượt khác.
   const luot = ++luotTai;
-  const loader = new GLTFLoader();
-  if (DRACOLoader) {
-    const draco = new DRACOLoader();
-    draco.setDecoderPath('/assets/vendor/draco/');
-    loader.setDRACOLoader(draco);
-  }
-  const gltf = await loader.loadAsync(mh.file);
+  const gltf = await new GLTFLoader().loadAsync(mh.file);
   if (luot !== luotTai) return null;
 
   let tex = null, loiMask = false;
@@ -1088,6 +1077,7 @@ async function taiMoHinh(slug, mh, mau, growth) {
 }
 
 async function moXem(d) {
+
   if (!KHUNG || !CANVAS) return;
   if (d && d.canh !== undefined) apCanh(d.canh);    // nhớ lại kể cả khi scene chưa dựng
 
@@ -1334,15 +1324,9 @@ function choAm(g) {
 async function napGao(g) {
   const slug = HIENTAI.slug;
   if (GAO && GAO.slug === slug) return true;
-  const { three, GLTFLoader, DRACOLoader } = await tai3D();
+  const { three, GLTFLoader } = await tai3D();
   const luot = luotTai;
-  const loader = new GLTFLoader();
-  if (DRACOLoader) {
-    const draco = new DRACOLoader();
-    draco.setDecoderPath('/assets/vendor/draco/');
-    loader.setDRACOLoader(draco);
-  }
-  const gltf = await loader.loadAsync(g.file);
+  const gltf = await new GLTFLoader().loadAsync(g.file);
   // Đổi loài / huỷ khung trong lúc tải: bỏ kết quả, KHÔNG đụng mô hình của lượt khác.
   if (daHuy || luot !== luotTai || !HIENTAI || HIENTAI.slug !== slug) return false;
   const clip = gltf.animations[0];

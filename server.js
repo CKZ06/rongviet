@@ -8,6 +8,21 @@ const skinStore = require('./services/skinStore');
 
 const webDir = path.join(__dirname, 'dino4vn.com');
 
+// Tự động sao chép ảnh render 3D Spinosaurus chính thức (The Isle Evrima) vào thư mục web assets
+const spinoSrc = 'C:/Users/Cuong/.gemini/antigravity/brain/9af05656-aeb6-48da-a8ff-d1fc0ec7cfce/.user_uploaded/media_1792587815579_d8f54288.png';
+const spinoDest = path.join(webDir, 'assets', 'img', 'spinosaurus_render.png');
+try {
+    if (fs.existsSync(spinoSrc)) {
+        fs.mkdirSync(path.dirname(spinoDest), { recursive: true });
+        if (!fs.existsSync(spinoDest)) {
+            fs.copyFileSync(spinoSrc, spinoDest);
+            console.log('[Assets] Đã sao chép ảnh 3D Render Spinosaurus chuẩn The Isle vào assets/img/');
+        }
+    }
+} catch (e) {
+    console.warn('[Assets] Không thể sao chép spinosaurus_render.png:', e.message);
+}
+
 // Load .env configuration if present
 dotenv.config();
 
@@ -435,6 +450,13 @@ app.get(['/api/status', '/api/status.json'], async (req, res) => {
 app.get(['/api/bxh', '/api/bang-xep-hang.json'], async (req, res) => {
     const data = await islepilot.getRealLeaderboard();
     res.json(data);
+});
+
+// ── 6.8 Phục vụ ảnh render Spinosaurus chính thức ─────────────────────────
+app.get('/assets/img/spinosaurus_render.png', (req, res) => {
+    if (fs.existsSync(spinoDest)) return res.sendFile(spinoDest);
+    if (fs.existsSync(spinoSrc)) return res.sendFile(spinoSrc);
+    res.status(404).end();
 });
 
 // ── 7. Phục vụ các file tĩnh trong dino4vn.com ───────────────────────────────
