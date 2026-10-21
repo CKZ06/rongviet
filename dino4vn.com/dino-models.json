@@ -41,7 +41,185 @@
     "Tenontosaurus": "tenontosaurus",
     "Triceratops": "triceratops",
     "Troodon": "troodon",
-    "Tyrannosaurus": "tyrannosaurus"
+    "Tyrannosaurus": "tyrannosaurus",
+    "Spinosaurus": "baryonyx",
+    "Spino": "baryonyx",
+    "Giga": "tyrannosaurus",
+    "Giganotosaurus": "tyrannosaurus",
+    "Anky": "stegosaurus",
+    "Ankylosaurus": "stegosaurus",
+    "TIAllosaurus": "allosaurus",
+    "Allo": "allosaurus",
+    "allosaurus": "allosaurus",
+    "TIAustroraptor": "austroraptor",
+    "austroraptor": "austroraptor",
+    "TIAvaceratops": "avaceratops",
+    "Avac": "avaceratops",
+    "avaceratops": "avaceratops",
+    "TIBaryonyx": "baryonyx",
+    "Bary": "baryonyx",
+    "baryonyx": "baryonyx",
+    "TIBeipiaosaurus": "beipiaosaurus",
+    "Beipi": "beipiaosaurus",
+    "beipiaosaurus": "beipiaosaurus",
+    "TICamarasaurus": "camarasaurus",
+    "camarasaurus": "camarasaurus",
+    "TICarnotaurus": "carnotaurus",
+    "Carno": "carnotaurus",
+    "carnotaurus": "carnotaurus",
+    "TICeratosaurus": "ceratosaurus",
+    "Cera": "ceratosaurus",
+    "ceratosaurus": "ceratosaurus",
+    "TICompsognathus": "compsognathus",
+    "Compy": "compsognathus",
+    "compsognathus": "compsognathus",
+    "TIDeinosuchus": "deinosuchus",
+    "Deino": "deinosuchus",
+    "deinosuchus": "deinosuchus",
+    "TIDiabloceratops": "diabloceratops",
+    "Diablo": "diabloceratops",
+    "diabloceratops": "diabloceratops",
+    "TIDilophosaurus": "dilophosaurus",
+    "Dilo": "dilophosaurus",
+    "dilophosaurus": "dilophosaurus",
+    "TIDryosaurus": "dryosaurus",
+    "Dryo": "dryosaurus",
+    "dryosaurus": "dryosaurus",
+    "TIGallimimus": "gallimimus",
+    "Galli": "gallimimus",
+    "gallimimus": "gallimimus",
+    "TIHerrerasaurus": "herrerasaurus",
+    "Herrera": "herrerasaurus",
+    "herrerasaurus": "herrerasaurus",
+    "TIHypsilophodon": "hypsilophodon",
+    "Hypsi": "hypsilophodon",
+    "hypsilophodon": "hypsilophodon",
+    "TIKentrosaurus": "kentrosaurus",
+    "Kentro": "kentrosaurus",
+    "kentrosaurus": "kentrosaurus",
+    "TIMaiasaura": "maiasaura",
+    "Maia": "maiasaura",
+    "maiasaura": "maiasaura",
+    "TIOmniraptor": "omniraptor",
+    "Omni": "omniraptor",
+    "Raptor": "omniraptor",
+    "omniraptor": "omniraptor",
+    "TIOviraptor": "oviraptor",
+    "Ovi": "oviraptor",
+    "oviraptor": "oviraptor",
+    "TIPachycephalosaurus": "pachycephalosaurus",
+    "Pachy": "pachycephalosaurus",
+    "pachycephalosaurus": "pachycephalosaurus",
+    "TIPteranodon": "pteranodon",
+    "Ptera": "pteranodon",
+    "Ptero": "pteranodon",
+    "pteranodon": "pteranodon",
+    "Quetzalcoatlus": "pteranodon",
+    "TIQuetzalcoatlus": "pteranodon",
+    "Quetz": "pteranodon",
+    "TIStegosaurus": "stegosaurus",
+    "Stego": "stegosaurus",
+    "stegosaurus": "stegosaurus",
+    "TITenontosaurus": "tenontosaurus",
+    "Teno": "tenontosaurus",
+    "Tenon": "tenontosaurus",
+    "tenontosaurus": "tenontosaurus",
+    "TITriceratops": "triceratops",
+    "Trike": "triceratops",
+    "triceratops": "triceratops",
+    "TITroodon": "troodon",
+    "troodon": "troodon",
+    "TITyrannosaurus": "tyrannosaurus",
+    "TRex": "tyrannosaurus",
+    "T-Rex": "tyrannosaurus",
+    "Rex": "tyrannosaurus",
+    "tyrannosaurus": "tyrannosaurus",
+    "TISpinosaurus": "baryonyx",
+    "spinosaurus": "baryonyx",
+    "spino": "baryonyx",
+    "Suchomimus": "baryonyx",
+    "TISuchomimus": "baryonyx",
+    "Sucho": "baryonyx",
+    "TIGiganotosaurus": "tyrannosaurus",
+    "giga": "tyrannosaurus",
+    "TIAnkylosaurus": "stegosaurus",
+    "anky": "stegosaurus",
+    "Psittacosaurus": "dryosaurus",
+    "Psittacosaurus_Base": "dryosaurus",
+    "Psittacosaurus_Highlands": "dryosaurus",
+    "Psittacosaurus_Plains": "dryosaurus",
+    "Psittacosaurus_Coastal": "dryosaurus",
+    "Taco": "dryosaurus",
+    "taco": "dryosaurus",
+    "TIDinosaurBase": "tyrannosaurus",
+    "dinosaurbase": "tyrannosaurus",
+    "TIFishBase": "deinosuchus",
+    "fishbase": "deinosuchus",
+    "TIAnimalBase": "dryosaurus",
+    "animalbase": "dryosaurus",
+    "TIFlyingDinosaurBase": "pteranodon",
+    "flyingdinosaurbase": "pteranodon",
+    "TIPowerSwingDinosaur": "tyrannosaurus",
+    "powerswingdinosaur": "tyrannosaurus",
+    "TIPsittacosaurus": "dryosaurus",
+    "psittacosaurus": "dryosaurus",
+    "AmbientBird": "pteranodon",
+    "ambientbird": "pteranodon",
+    "TIAmbientBird": "pteranodon",
+    "Pterodactylus": "pteranodon",
+    "pterodactylus": "pteranodon",
+    "TIPterodactylus": "pteranodon",
+    "Boar": "avaceratops",
+    "boar": "avaceratops",
+    "TIBoar": "avaceratops",
+    "Boar_Baby": "avaceratops",
+    "boar_baby": "avaceratops",
+    "Deer": "tenontosaurus",
+    "deer": "tenontosaurus",
+    "TIDeer": "tenontosaurus",
+    "Deer_Baby": "tenontosaurus",
+    "deer_baby": "tenontosaurus",
+    "Goat": "avaceratops",
+    "goat": "avaceratops",
+    "TIGoat": "avaceratops",
+    "Goat_Baby": "avaceratops",
+    "goat_baby": "avaceratops",
+    "Rabbit": "dryosaurus",
+    "rabbit": "dryosaurus",
+    "TIRabbit": "dryosaurus",
+    "Chicken": "hypsilophodon",
+    "chicken": "hypsilophodon",
+    "TIChicken": "hypsilophodon",
+    "Lizard": "hypsilophodon",
+    "lizard": "hypsilophodon",
+    "TILizard": "hypsilophodon",
+    "Grasshopper": "hypsilophodon",
+    "grasshopper": "hypsilophodon",
+    "TIGrasshopper": "hypsilophodon",
+    "Dragonfly": "hypsilophodon",
+    "dragonfly": "hypsilophodon",
+    "TIDragonfly": "hypsilophodon",
+    "Bullfrog": "deinosuchus",
+    "bullfrog": "deinosuchus",
+    "TIBullfrog": "deinosuchus",
+    "Catfish": "deinosuchus",
+    "catfish": "deinosuchus",
+    "TICatfish": "deinosuchus",
+    "Coelacanth": "deinosuchus",
+    "coelacanth": "deinosuchus",
+    "TICoelacanth": "deinosuchus",
+    "Crab": "deinosuchus",
+    "crab": "deinosuchus",
+    "TICrab": "deinosuchus",
+    "GiantCrab": "deinosuchus",
+    "giantcrab": "deinosuchus",
+    "TIGiantCrab": "deinosuchus",
+    "ClamCharacter": "deinosuchus",
+    "clamcharacter": "deinosuchus",
+    "TIClamCharacter": "deinosuchus",
+    "Seaturtle": "deinosuchus",
+    "seaturtle": "deinosuchus",
+    "TISeaturtle": "deinosuchus"
   },
   "mohinh": {
     "allosaurus": {
@@ -58,7 +236,7 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Allosaurus",
@@ -81,8 +259,8 @@
         "adult": {
           "khe": {
             "body": 12.6,
-            "detail1": 0.0,
-            "flank": 28.0,
+            "detail1": 0,
+            "flank": 28,
             "maleDisplay": 2.1,
             "markings": 35.1,
             "underbelly": 12.4
@@ -92,9 +270,9 @@
         "hatchling": {
           "khe": {
             "body": 22.9,
-            "detail1": 0.0,
-            "flank": 32.0,
-            "maleDisplay": 0.0,
+            "detail1": 0,
+            "flank": 32,
+            "maleDisplay": 0,
             "markings": 9.8,
             "underbelly": 25.5
           },
@@ -103,9 +281,9 @@
         "juvenile": {
           "khe": {
             "body": 14.7,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 31.3,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 26.2,
             "underbelly": 18.1
           },
@@ -115,7 +293,7 @@
       "pbr": {
         "n": "/assets/dino/pbr/allosaurus_n.e9fd0de3.webp",
         "chi_tiet": "/assets/dino/pbr/chitiet_dinoskindetail_5.91940f6e.webp",
-        "lap": 12.0,
+        "lap": 12,
         "rac": "/assets/dino/pbr/allosaurus_rac.f3b33ccd.webp"
       }
     },
@@ -133,7 +311,7 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Austroraptor",
@@ -156,7 +334,7 @@
         "adult": {
           "khe": {
             "body": 10.1,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 8.4,
             "maleDisplay": 2.2,
             "markings": 46.1,
@@ -167,9 +345,9 @@
         "hatchling": {
           "khe": {
             "body": 48.1,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 13.7,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 4.7,
             "underbelly": 15.9
           },
@@ -178,9 +356,9 @@
         "juvenile": {
           "khe": {
             "body": 21.9,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 17.7,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 26.8,
             "underbelly": 15.9
           },
@@ -190,7 +368,7 @@
       "pbr": {
         "n": "/assets/dino/pbr/austroraptor_n.f9fccb72.webp",
         "chi_tiet": "/assets/dino/pbr/chitiet_dinoskindetail_5.91940f6e.webp",
-        "lap": 12.0,
+        "lap": 12,
         "rac": "/assets/dino/pbr/austroraptor_rac.8ca3caa1.webp"
       }
     },
@@ -208,7 +386,7 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Avaceratops",
@@ -231,7 +409,7 @@
         "adult": {
           "khe": {
             "body": 7.3,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 9.9,
             "maleDisplay": 3.8,
             "markings": 29.5,
@@ -242,9 +420,9 @@
         "hatchling": {
           "khe": {
             "body": 6.7,
-            "detail1": 0.0,
-            "flank": 0.0,
-            "maleDisplay": 0.0,
+            "detail1": 0,
+            "flank": 0,
+            "maleDisplay": 0,
             "markings": 43.7,
             "underbelly": 4.3
           },
@@ -253,9 +431,9 @@
         "juvenile": {
           "khe": {
             "body": 6.7,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 16.4,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 27.3,
             "underbelly": 4.3
           },
@@ -265,7 +443,7 @@
       "pbr": {
         "n": "/assets/dino/pbr/avaceratops_n.2deb991f.webp",
         "chi_tiet": "/assets/dino/pbr/chitiet_dinoskindetail_5.91940f6e.webp",
-        "lap": 12.0,
+        "lap": 12,
         "rac": "/assets/dino/pbr/avaceratops_rac.54be18c1.webp"
       }
     },
@@ -283,7 +461,7 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Baryonyx",
@@ -305,9 +483,9 @@
         "adult": {
           "khe": {
             "body": 8.3,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 15.1,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 35.3,
             "underbelly": 21.2
           },
@@ -316,9 +494,9 @@
         "hatchling": {
           "khe": {
             "body": 16.7,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 18.8,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 22.5,
             "underbelly": 22.1
           },
@@ -327,9 +505,9 @@
         "juvenile": {
           "khe": {
             "body": 11.5,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 16.3,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 29.5,
             "underbelly": 22.2
           },
@@ -339,7 +517,7 @@
       "pbr": {
         "n": "/assets/dino/pbr/baryonyx_n.f1e5f8c6.webp",
         "chi_tiet": "/assets/dino/pbr/chitiet_dinoskindetail_5.91940f6e.webp",
-        "lap": 12.0,
+        "lap": 12,
         "rac": "/assets/dino/pbr/baryonyx_rac.3b4bb4ea.webp"
       }
     },
@@ -357,11 +535,11 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Beipiaosaurus",
-      "mask": "/assets/dino/tex/beipiaosaurus_adult.20260830.47b90e8f.png",
+      "mask": "/assets/dino/tex/beipiaosaurus_hatchling.20260830.39420f61.png",
       "mode": "mask",
       "mask_layers": [
         "R",
@@ -375,7 +553,7 @@
       "mask_tuoi": {
         "hatchling": "/assets/dino/tex/beipiaosaurus_hatchling.20260830.39420f61.png",
         "juvenile": "/assets/dino/tex/beipiaosaurus_juvenile.20260830.cd1fca45.png",
-        "adult": "/assets/dino/tex/beipiaosaurus_adult.20260830.47b90e8f.png"
+        "adult": "/assets/dino/tex/beipiaosaurus_hatchling.20260830.39420f61.png"
       },
       "khe_tuoi": {
         "adult": {
@@ -391,11 +569,11 @@
         },
         "hatchling": {
           "khe": {
-            "body": 33.0,
+            "body": 33,
             "detail1": 17.8,
             "flank": 9.9,
-            "maleDisplay": 0.0,
-            "markings": 0.0,
+            "maleDisplay": 0,
+            "markings": 0,
             "underbelly": 3.2
           },
           "nen": 35.9
@@ -405,8 +583,8 @@
             "body": 23.9,
             "detail1": 17.8,
             "flank": 13.2,
-            "maleDisplay": 0.0,
-            "markings": 2.0,
+            "maleDisplay": 0,
+            "markings": 2,
             "underbelly": 7.3
           },
           "nen": 35.9
@@ -415,7 +593,7 @@
       "pbr": {
         "n": "/assets/dino/pbr/beipiaosaurus_n.7f673341.webp",
         "chi_tiet": "/assets/dino/pbr/chitiet_dinoskindetail_5.91940f6e.webp",
-        "lap": 12.0,
+        "lap": 12,
         "rac": "/assets/dino/pbr/beipiaosaurus_rac.9d9c6f6e.webp"
       }
     },
@@ -433,11 +611,11 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Camarasaurus",
-      "mask": "/assets/dino/tex/camarasaurus_adult.20260830.ea7a13e2.png",
+      "mask": "/assets/dino/tex/camarasaurus_hatchling.20260830.25fde405.png",
       "mode": "mask",
       "mask_layers": [
         "G",
@@ -449,16 +627,16 @@
       "mask_tuoi": {
         "hatchling": "/assets/dino/tex/camarasaurus_hatchling.20260830.25fde405.png",
         "juvenile": "/assets/dino/tex/camarasaurus_juvenile.20260830.d8659511.png",
-        "adult": "/assets/dino/tex/camarasaurus_adult.20260830.ea7a13e2.png"
+        "adult": "/assets/dino/tex/camarasaurus_hatchling.20260830.25fde405.png"
       },
       "khe_tuoi": {
         "adult": {
           "khe": {
-            "body": 13.0,
-            "detail1": 0.0,
+            "body": 13,
+            "detail1": 0,
             "flank": 22.2,
-            "maleDisplay": 0.0,
-            "markings": 44.0,
+            "maleDisplay": 0,
+            "markings": 44,
             "underbelly": 8.3
           },
           "nen": 12.1
@@ -466,10 +644,10 @@
         "hatchling": {
           "khe": {
             "body": 19.4,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 48.7,
-            "maleDisplay": 0.0,
-            "markings": 0.0,
+            "maleDisplay": 0,
+            "markings": 0,
             "underbelly": 19.6
           },
           "nen": 12.1
@@ -477,9 +655,9 @@
         "juvenile": {
           "khe": {
             "body": 15.5,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 16.8,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 43.1,
             "underbelly": 12.4
           },
@@ -489,7 +667,7 @@
       "pbr": {
         "n": "/assets/dino/pbr/camarasaurus_n.fc22d40d.webp",
         "chi_tiet": "/assets/dino/pbr/chitiet_dinoskindetail_5.91940f6e.webp",
-        "lap": 12.0,
+        "lap": 12,
         "rac": "/assets/dino/pbr/camarasaurus_rac.ba626adf.webp"
       }
     },
@@ -507,7 +685,7 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Carnotaurus",
@@ -530,7 +708,7 @@
         "adult": {
           "khe": {
             "body": 13.7,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 18.2,
             "maleDisplay": 4.1,
             "markings": 29.1,
@@ -541,22 +719,22 @@
         "hatchling": {
           "khe": {
             "body": 21.4,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 23.2,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 11.3,
-            "underbelly": 28.0
+            "underbelly": 28
           },
           "nen": 16.1
         },
         "juvenile": {
           "khe": {
             "body": 15.7,
-            "detail1": 0.0,
-            "flank": 20.0,
-            "maleDisplay": 0.0,
+            "detail1": 0,
+            "flank": 20,
+            "maleDisplay": 0,
             "markings": 28.2,
-            "underbelly": 20.0
+            "underbelly": 20
           },
           "nen": 16.1
         }
@@ -564,7 +742,7 @@
       "pbr": {
         "n": "/assets/dino/pbr/carnotaurus_n.80b8e2bf.webp",
         "chi_tiet": "/assets/dino/pbr/chitiet_dinodetail4.34cdeb93.webp",
-        "lap": 8.0,
+        "lap": 8,
         "rac": "/assets/dino/pbr/carnotaurus_rac.7b15479b.webp"
       }
     },
@@ -582,7 +760,7 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Ceratosaurus",
@@ -604,10 +782,10 @@
       "khe_tuoi": {
         "adult": {
           "khe": {
-            "body": 8.0,
-            "detail1": 0.0,
-            "flank": 28.0,
-            "maleDisplay": 1.0,
+            "body": 8,
+            "detail1": 0,
+            "flank": 28,
+            "maleDisplay": 1,
             "markings": 29.3,
             "underbelly": 12.4
           },
@@ -616,9 +794,9 @@
         "hatchling": {
           "khe": {
             "body": 19.8,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 7.7,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 31.9,
             "underbelly": 19.1
           },
@@ -627,9 +805,9 @@
         "juvenile": {
           "khe": {
             "body": 9.6,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 24.5,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 36.8,
             "underbelly": 7.8
           },
@@ -639,12 +817,12 @@
       "pbr": {
         "n": "/assets/dino/pbr/ceratosaurus_n.acf44048.webp",
         "chi_tiet": "/assets/dino/pbr/chitiet_dinodetail4a.cd5643f4.webp",
-        "lap": 12.0,
+        "lap": 12,
         "rac": "/assets/dino/pbr/ceratosaurus_rac.9dfe196d.webp"
       }
     },
     "compsognathus": {
-      "file": "/assets/dino/compsognathus.5a03bae0.glb",
+      "file": "/assets/dino/troodon.a3fe1f17.glb",
       "khemau": {
         "body": {
           "materials": [
@@ -657,11 +835,11 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Compsognathus",
-      "mask": "/assets/dino/tex/compsognathus_adult.20260830.58cbaae2.png",
+      "mask": "/assets/dino/tex/troodon_adult.20260830.05a1a5cc.png",
       "mode": "mask",
       "mask_layers": [
         "R",
@@ -679,7 +857,7 @@
         "adult": {
           "khe": {
             "body": 4.4,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 22.3,
             "maleDisplay": 3.5,
             "markings": 41.3,
@@ -690,7 +868,7 @@
         "hatchling": {
           "khe": {
             "body": 4.4,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 22.3,
             "maleDisplay": 3.5,
             "markings": 41.3,
@@ -700,10 +878,10 @@
         }
       },
       "pbr": {
-        "n": "/assets/dino/pbr/compsognathus_n.354cbb73.webp",
+        "n": "/assets/dino/pbr/troodon_n.297ea06a.webp",
         "chi_tiet": "/assets/dino/pbr/chitiet_dinoskindetail_5.91940f6e.webp",
-        "lap": 12.0,
-        "rac": "/assets/dino/pbr/compsognathus_rac.54643aab.webp"
+        "lap": 12,
+        "rac": "/assets/dino/pbr/troodon_rac.c794c6b4.webp"
       }
     },
     "deinosuchus": {
@@ -720,7 +898,7 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Deinosuchus",
@@ -732,7 +910,7 @@
         "C",
         "M"
       ],
-      "mask_base_pct": 28.0,
+      "mask_base_pct": 28,
       "mask_tuoi": {
         "hatchling": "/assets/dino/tex/deinosuchus_hatchling.20260830.95c88f71.png",
         "juvenile": "/assets/dino/tex/deinosuchus_juvenile.20260830.eeb100c0.png",
@@ -742,46 +920,46 @@
         "adult": {
           "khe": {
             "body": 13.9,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 15.5,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 30.2,
             "underbelly": 12.3
           },
-          "nen": 28.0
+          "nen": 28
         },
         "hatchling": {
           "khe": {
             "body": 13.4,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 10.9,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 27.2,
             "underbelly": 20.4
           },
-          "nen": 28.0
+          "nen": 28
         },
         "juvenile": {
           "khe": {
             "body": 15.6,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 14.9,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 27.3,
             "underbelly": 14.2
           },
-          "nen": 28.0
+          "nen": 28
         }
       },
       "pbr": {
         "n": "/assets/dino/pbr/deinosuchus_n.31c7291c.webp",
         "chi_tiet": "/assets/dino/pbr/chitiet_dinoskindetail_5.91940f6e.webp",
-        "lap": 12.0,
+        "lap": 12,
         "rac": "/assets/dino/pbr/deinosuchus_rac.b24780df.webp"
       }
     },
     "diabloceratops": {
-      "file": "/assets/dino/diabloceratops.b1aca1cc.glb",
+      "file": "/assets/dino/avaceratops.03ded5f6.glb",
       "khemau": {
         "body": {
           "materials": [
@@ -794,11 +972,11 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Diabloceratops",
-      "mask": "/assets/dino/tex/diabloceratops_adult.20260830.c1ae0c7c.png",
+      "mask": "/assets/dino/tex/avaceratops_hatchling.20260830.c6a7ece6.png",
       "mode": "mask",
       "mask_layers": [
         "R",
@@ -817,21 +995,21 @@
         "adult": {
           "khe": {
             "body": 9.7,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 14.8,
             "maleDisplay": 3.4,
             "markings": 35.3,
-            "underbelly": 13.0
+            "underbelly": 13
           },
           "nen": 23.8
         },
         "hatchling": {
           "khe": {
             "body": 13.4,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 23.6,
-            "maleDisplay": 0.0,
-            "markings": 27.0,
+            "maleDisplay": 0,
+            "markings": 27,
             "underbelly": 18.2
           },
           "nen": 17.8
@@ -839,9 +1017,9 @@
         "juvenile": {
           "khe": {
             "body": 13.5,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 23.1,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 28.9,
             "underbelly": 16.6
           },
@@ -849,10 +1027,10 @@
         }
       },
       "pbr": {
-        "n": "/assets/dino/pbr/diabloceratops_n.eacad940.webp",
-        "chi_tiet": "/assets/dino/pbr/chitiet_dinodetail4.34cdeb93.webp",
-        "lap": 10.0,
-        "rac": "/assets/dino/pbr/diabloceratops_rac.2bc7443f.webp"
+        "n": "/assets/dino/pbr/triceratops_n.25c4559c.webp",
+        "chi_tiet": "/assets/dino/pbr/chitiet_dinoskindetail_1.6bfc9836.webp",
+        "lap": 12,
+        "rac": "/assets/dino/pbr/triceratops_rac.91f0c00b.webp"
       }
     },
     "dilophosaurus": {
@@ -869,7 +1047,7 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Dilophosaurus",
@@ -882,7 +1060,7 @@
         "C",
         "M"
       ],
-      "mask_base_pct": 0.0,
+      "mask_base_pct": 0,
       "mask_tuoi": {
         "hatchling": "/assets/dino/tex/dilophosaurus_hatchling.20260830.6afead86.png",
         "juvenile": "/assets/dino/tex/dilophosaurus_juvenile.20260830.12faf51c.png",
@@ -891,42 +1069,42 @@
       "khe_tuoi": {
         "adult": {
           "khe": {
-            "body": 17.0,
-            "detail1": 0.0,
+            "body": 17,
+            "detail1": 0,
             "flank": 10.2,
             "maleDisplay": 1.8,
             "markings": 39.5,
             "underbelly": 31.3
           },
-          "nen": 0.0
+          "nen": 0
         },
         "hatchling": {
           "khe": {
             "body": 18.7,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 21.9,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 13.6,
             "underbelly": 45.8
           },
-          "nen": 0.0
+          "nen": 0
         },
         "juvenile": {
           "khe": {
             "body": 14.4,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 12.2,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 35.8,
             "underbelly": 37.5
           },
-          "nen": 0.0
+          "nen": 0
         }
       },
       "pbr": {
         "n": "/assets/dino/pbr/dilophosaurus_n.7a1a89e6.webp",
         "chi_tiet": "/assets/dino/pbr/chitiet_dinoskindetail_5.91940f6e.webp",
-        "lap": 16.0,
+        "lap": 16,
         "rac": "/assets/dino/pbr/dilophosaurus_rac.cf4aefd1.webp"
       }
     },
@@ -944,7 +1122,7 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Dryosaurus",
@@ -967,7 +1145,7 @@
         "adult": {
           "khe": {
             "body": 24.2,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 13.2,
             "maleDisplay": 1.4,
             "markings": 8.8,
@@ -978,20 +1156,20 @@
         "hatchling": {
           "khe": {
             "body": 21.3,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 8.5,
-            "maleDisplay": 0.0,
-            "markings": 0.0,
+            "maleDisplay": 0,
+            "markings": 0,
             "underbelly": 46.4
           },
           "nen": 23.8
         },
         "juvenile": {
           "khe": {
-            "body": 18.0,
-            "detail1": 0.0,
+            "body": 18,
+            "detail1": 0,
             "flank": 10.4,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 5.3,
             "underbelly": 42.5
           },
@@ -1001,7 +1179,7 @@
       "pbr": {
         "n": "/assets/dino/pbr/dryosaurus_n.e36e75b6.webp",
         "chi_tiet": "/assets/dino/pbr/chitiet_dinoskindetail_5.91940f6e.webp",
-        "lap": 12.0,
+        "lap": 12,
         "rac": "/assets/dino/pbr/dryosaurus_rac.daf6e8b6.webp"
       }
     },
@@ -1019,7 +1197,7 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Gallimimus",
@@ -1032,7 +1210,7 @@
         "C",
         "M"
       ],
-      "mask_base_pct": 0.0,
+      "mask_base_pct": 0,
       "mask_tuoi": {
         "hatchling": "/assets/dino/tex/gallimimus_hatchling.20260830.4ebf32f9.png",
         "juvenile": "/assets/dino/tex/gallimimus_juvenile.20260830.b64a5b32.png",
@@ -1042,20 +1220,20 @@
         "adult": {
           "khe": {
             "body": 16.3,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 19.7,
             "maleDisplay": 4.7,
             "markings": 19.1,
             "underbelly": 40.2
           },
-          "nen": 0.0
+          "nen": 0
         },
         "hatchling": {
           "khe": {
             "body": 29.8,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 20.8,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 1.6,
             "underbelly": 19.9
           },
@@ -1064,9 +1242,9 @@
         "juvenile": {
           "khe": {
             "body": 15.2,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 26.7,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 14.9,
             "underbelly": 15.4
           },
@@ -1076,7 +1254,7 @@
       "pbr": {
         "n": "/assets/dino/pbr/gallimimus_n.32eb5342.webp",
         "chi_tiet": "/assets/dino/pbr/chitiet_dinodetail4.34cdeb93.webp",
-        "lap": 8.0,
+        "lap": 8,
         "rac": "/assets/dino/pbr/gallimimus_rac.1f7d6973.webp"
       }
     },
@@ -1094,7 +1272,7 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Herrerasaurus",
@@ -1116,10 +1294,10 @@
         "adult": {
           "khe": {
             "body": 14.8,
-            "detail1": 0.0,
-            "flank": 13.0,
-            "maleDisplay": 0.0,
-            "markings": 27.0,
+            "detail1": 0,
+            "flank": 13,
+            "maleDisplay": 0,
+            "markings": 27,
             "underbelly": 24.3
           },
           "nen": 20.5
@@ -1127,9 +1305,9 @@
         "hatchling": {
           "khe": {
             "body": 27.5,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 14.6,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 6.6,
             "underbelly": 30.8
           },
@@ -1138,9 +1316,9 @@
         "juvenile": {
           "khe": {
             "body": 20.4,
-            "detail1": 0.0,
-            "flank": 20.0,
-            "maleDisplay": 0.0,
+            "detail1": 0,
+            "flank": 20,
+            "maleDisplay": 0,
             "markings": 16.5,
             "underbelly": 22.6
           },
@@ -1150,7 +1328,7 @@
       "pbr": {
         "n": "/assets/dino/pbr/herrerasaurus_n.56436135.webp",
         "chi_tiet": "/assets/dino/pbr/chitiet_dinoskindetail_1.6bfc9836.webp",
-        "lap": 12.0,
+        "lap": 12,
         "rac": "/assets/dino/pbr/herrerasaurus_rac.0bbe459c.webp"
       }
     },
@@ -1168,7 +1346,7 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Hypsilophodon",
@@ -1190,9 +1368,9 @@
         "adult": {
           "khe": {
             "body": 5.9,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 2.8,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 58.5,
             "underbelly": 2.1
           },
@@ -1201,20 +1379,20 @@
         "hatchling": {
           "khe": {
             "body": 59.4,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 2.4,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 4.3,
-            "underbelly": 0.0
+            "underbelly": 0
           },
           "nen": 33.9
         },
         "juvenile": {
           "khe": {
             "body": 15.4,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 0.7,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 48.3,
             "underbelly": 1.7
           },
@@ -1224,7 +1402,7 @@
       "pbr": {
         "n": "/assets/dino/pbr/hypsilophodon_n.36086b30.webp",
         "chi_tiet": "/assets/dino/pbr/chitiet_dinoskindetail_5.91940f6e.webp",
-        "lap": 12.0,
+        "lap": 12,
         "rac": "/assets/dino/pbr/hypsilophodon_rac.73457b25.webp"
       }
     },
@@ -1242,7 +1420,7 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Kentrosaurus",
@@ -1254,7 +1432,7 @@
         "C",
         "M"
       ],
-      "mask_base_pct": 23.0,
+      "mask_base_pct": 23,
       "mask_tuoi": {
         "hatchling": "/assets/dino/tex/kentrosaurus_hatchling.20260830.ba9a813d.png",
         "juvenile": "/assets/dino/tex/kentrosaurus_juvenile.20260830.dcb05585.png",
@@ -1264,41 +1442,41 @@
         "adult": {
           "khe": {
             "body": 11.7,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 27.8,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 9.6,
             "underbelly": 27.3
           },
-          "nen": 23.0
+          "nen": 23
         },
         "hatchling": {
           "khe": {
             "body": 13.5,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 28.4,
-            "maleDisplay": 0.0,
-            "markings": 15.0,
-            "underbelly": 20.0
+            "maleDisplay": 0,
+            "markings": 15,
+            "underbelly": 20
           },
-          "nen": 23.0
+          "nen": 23
         },
         "juvenile": {
           "khe": {
             "body": 10.3,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 25.1,
-            "maleDisplay": 0.0,
-            "markings": 6.0,
+            "maleDisplay": 0,
+            "markings": 6,
             "underbelly": 35.6
           },
-          "nen": 23.0
+          "nen": 23
         }
       },
       "pbr": {
         "n": "/assets/dino/pbr/kentrosaurus_n.5d8f24cb.webp",
         "chi_tiet": "/assets/dino/pbr/chitiet_dinoskindetail_5.91940f6e.webp",
-        "lap": 12.0,
+        "lap": 12,
         "rac": "/assets/dino/pbr/kentrosaurus_rac.d995ab0f.webp"
       }
     },
@@ -1316,7 +1494,7 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Maiasaura",
@@ -1339,7 +1517,7 @@
         "adult": {
           "khe": {
             "body": 7.4,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 10.8,
             "maleDisplay": 6.3,
             "markings": 36.4,
@@ -1350,9 +1528,9 @@
         "hatchling": {
           "khe": {
             "body": 14.3,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 34.3,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 16.1,
             "underbelly": 18.2
           },
@@ -1361,11 +1539,11 @@
         "juvenile": {
           "khe": {
             "body": 11.4,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 33.9,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 19.6,
-            "underbelly": 18.0
+            "underbelly": 18
           },
           "nen": 17.1
         }
@@ -1373,7 +1551,7 @@
       "pbr": {
         "n": "/assets/dino/pbr/maiasaura_n.6edbbcfb.webp",
         "chi_tiet": "/assets/dino/pbr/chitiet_dinodetail4.34cdeb93.webp",
-        "lap": 10.0,
+        "lap": 10,
         "rac": "/assets/dino/pbr/maiasaura_rac.419b5aa9.webp"
       }
     },
@@ -1391,7 +1569,7 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Omniraptor",
@@ -1404,7 +1582,7 @@
         "C",
         "M"
       ],
-      "mask_base_pct": 17.0,
+      "mask_base_pct": 17,
       "mask_tuoi": {
         "hatchling": "/assets/dino/tex/omniraptor_hatchling.20260830.c377b9ff.png",
         "juvenile": "/assets/dino/tex/omniraptor_juvenile.20260830.6535eee3.png",
@@ -1414,41 +1592,41 @@
         "adult": {
           "khe": {
             "body": 14.6,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 20.5,
             "maleDisplay": 1.5,
             "markings": 29.2,
             "underbelly": 17.1
           },
-          "nen": 17.0
+          "nen": 17
         },
         "hatchling": {
           "khe": {
             "body": 24.9,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 18.9,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 14.4,
             "underbelly": 24.8
           },
-          "nen": 17.0
+          "nen": 17
         },
         "juvenile": {
           "khe": {
             "body": 21.3,
-            "detail1": 0.0,
-            "flank": 23.0,
-            "maleDisplay": 0.0,
+            "detail1": 0,
+            "flank": 23,
+            "maleDisplay": 0,
             "markings": 19.3,
             "underbelly": 19.3
           },
-          "nen": 17.0
+          "nen": 17
         }
       },
       "pbr": {
         "n": "/assets/dino/pbr/omniraptor_n.b6574c38.webp",
         "chi_tiet": "/assets/dino/pbr/chitiet_dinoskindetail_5.91940f6e.webp",
-        "lap": 12.0,
+        "lap": 12,
         "rac": "/assets/dino/pbr/omniraptor_rac.e85f9f04.webp"
       }
     },
@@ -1466,7 +1644,7 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Oviraptor",
@@ -1489,7 +1667,7 @@
         "adult": {
           "khe": {
             "body": 9.5,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 5.8,
             "maleDisplay": 2.6,
             "markings": 41.8,
@@ -1499,10 +1677,10 @@
         },
         "hatchling": {
           "khe": {
-            "body": 37.0,
-            "detail1": 0.0,
+            "body": 37,
+            "detail1": 0,
             "flank": 18.9,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 3.6,
             "underbelly": 8.9
           },
@@ -1511,9 +1689,9 @@
         "juvenile": {
           "khe": {
             "body": 8.4,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 11.3,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 39.9,
             "underbelly": 8.9
           },
@@ -1523,7 +1701,7 @@
       "pbr": {
         "n": "/assets/dino/pbr/oviraptor_n.3f1a6525.webp",
         "chi_tiet": "/assets/dino/pbr/chitiet_dinoskindetail_5.91940f6e.webp",
-        "lap": 12.0,
+        "lap": 12,
         "rac": "/assets/dino/pbr/oviraptor_rac.0b4988ca.webp"
       }
     },
@@ -1541,7 +1719,7 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Pachycephalosaurus",
@@ -1564,7 +1742,7 @@
         "adult": {
           "khe": {
             "body": 12.3,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 16.6,
             "maleDisplay": 3.6,
             "markings": 31.4,
@@ -1575,9 +1753,9 @@
         "hatchling": {
           "khe": {
             "body": 23.7,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 36.7,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 2.1,
             "underbelly": 16.6
           },
@@ -1586,9 +1764,9 @@
         "juvenile": {
           "khe": {
             "body": 13.4,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 17.5,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 33.5,
             "underbelly": 14.6
           },
@@ -1598,7 +1776,7 @@
       "pbr": {
         "n": "/assets/dino/pbr/pachycephalosaurus_n.0ba206e5.webp",
         "chi_tiet": "/assets/dino/pbr/chitiet_dinodetail4a.cd5643f4.webp",
-        "lap": 16.0,
+        "lap": 16,
         "rac": "/assets/dino/pbr/pachycephalosaurus_rac.67006ffa.webp"
       }
     },
@@ -1616,11 +1794,11 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Pteranodon",
-      "mask": "/assets/dino/tex/pteranodon_adult.20260830.d07fe99a.png",
+      "mask": "/assets/dino/tex/pteranodon_hatchling.20260830.ffa33f6c.png",
       "mode": "mask",
       "mask_layers": [
         "R",
@@ -1633,13 +1811,13 @@
       "mask_tuoi": {
         "hatchling": "/assets/dino/tex/pteranodon_hatchling.20260830.ffa33f6c.png",
         "juvenile": "/assets/dino/tex/pteranodon_juvenile.20260830.0cd0c013.png",
-        "adult": "/assets/dino/tex/pteranodon_adult.20260830.d07fe99a.png"
+        "adult": "/assets/dino/tex/pteranodon_hatchling.20260830.ffa33f6c.png"
       },
       "khe_tuoi": {
         "adult": {
           "khe": {
             "body": 10.9,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 8.7,
             "maleDisplay": 1.3,
             "markings": 31.9,
@@ -1650,9 +1828,9 @@
         "hatchling": {
           "khe": {
             "body": 20.3,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 22.3,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 6.9,
             "underbelly": 11.7
           },
@@ -1661,9 +1839,9 @@
         "juvenile": {
           "khe": {
             "body": 13.9,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 13.5,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 24.1,
             "underbelly": 9.9
           },
@@ -1673,7 +1851,7 @@
       "pbr": {
         "n": "/assets/dino/pbr/pteranodon_n.ee18029e.webp",
         "chi_tiet": "/assets/dino/pbr/chitiet_dinoskindetail_4.05407aac.webp",
-        "lap": 10.0,
+        "lap": 10,
         "rac": "/assets/dino/pbr/pteranodon_rac.9aeec929.webp"
       }
     },
@@ -1691,7 +1869,7 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Stegosaurus",
@@ -1714,7 +1892,7 @@
         "adult": {
           "khe": {
             "body": 4.7,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 6.1,
             "maleDisplay": 4.1,
             "markings": 59.6,
@@ -1725,9 +1903,9 @@
         "hatchling": {
           "khe": {
             "body": 12.6,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 38.5,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 22.5,
             "underbelly": 16.8
           },
@@ -1736,9 +1914,9 @@
         "juvenile": {
           "khe": {
             "body": 6.5,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 7.1,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 58.8,
             "underbelly": 17.8
           },
@@ -1748,12 +1926,12 @@
       "pbr": {
         "n": "/assets/dino/pbr/stegosaurus_n.83442e94.webp",
         "chi_tiet": "/assets/dino/pbr/chitiet_dinoskindetail_5.91940f6e.webp",
-        "lap": 12.0,
+        "lap": 12,
         "rac": "/assets/dino/pbr/stegosaurus_rac.83c1ce75.webp"
       }
     },
     "tenontosaurus": {
-      "file": "/assets/dino/tenontosaurus.31ceb7d9.glb",
+      "file": "/assets/dino/maiasaura.1cfd20a8.glb",
       "khemau": {
         "body": {
           "materials": [
@@ -1766,11 +1944,11 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Tenontosaurus",
-      "mask": "/assets/dino/tex/tenontosaurus_adult.20260830.72b5310d.png",
+      "mask": "/assets/dino/tex/maiasaura_adult.20260830.7851401d.png",
       "mode": "mask",
       "mask_layers": [
         "R",
@@ -1779,7 +1957,7 @@
         "C",
         "M"
       ],
-      "mask_base_pct": 14.0,
+      "mask_base_pct": 14,
       "mask_tuoi": {
         "hatchling": "/assets/dino/tex/tenontosaurus_hatchling.20260830.ca5def3a.png",
         "juvenile": "/assets/dino/tex/tenontosaurus_juvenile.20260830.6d861392.png",
@@ -1789,42 +1967,42 @@
         "adult": {
           "khe": {
             "body": 9.2,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 17.6,
             "maleDisplay": 21.9,
             "markings": 25.5,
             "underbelly": 11.8
           },
-          "nen": 14.0
+          "nen": 14
         },
         "hatchling": {
           "khe": {
             "body": 20.7,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 27.1,
             "maleDisplay": 5.9,
             "markings": 5.4,
             "underbelly": 26.8
           },
-          "nen": 14.0
+          "nen": 14
         },
         "juvenile": {
           "khe": {
             "body": 11.9,
-            "detail1": 0.0,
-            "flank": 19.0,
+            "detail1": 0,
+            "flank": 19,
             "maleDisplay": 7.8,
             "markings": 34.5,
             "underbelly": 12.8
           },
-          "nen": 14.0
+          "nen": 14
         }
       },
       "pbr": {
-        "n": "/assets/dino/pbr/tenontosaurus_n.c6cc61c9.webp",
-        "chi_tiet": "/assets/dino/pbr/chitiet_dinoskindetail_5.91940f6e.webp",
-        "lap": 12.0,
-        "rac": "/assets/dino/pbr/tenontosaurus_rac.9f4f802e.webp"
+        "n": "/assets/dino/pbr/maiasaura_n.6edbbcfb.webp",
+        "chi_tiet": "/assets/dino/pbr/chitiet_dinoskindetail_4.05407aac.webp",
+        "lap": 12,
+        "rac": "/assets/dino/pbr/maiasaura_rac.419b5aa9.webp"
       }
     },
     "triceratops": {
@@ -1841,7 +2019,7 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Triceratops",
@@ -1864,7 +2042,7 @@
         "adult": {
           "khe": {
             "body": 9.7,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 18.3,
             "maleDisplay": 1.5,
             "markings": 38.8,
@@ -1875,10 +2053,10 @@
         "hatchling": {
           "khe": {
             "body": 29.6,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 31.1,
-            "maleDisplay": 0.0,
-            "markings": 0.0,
+            "maleDisplay": 0,
+            "markings": 0,
             "underbelly": 22.4
           },
           "nen": 16.8
@@ -1886,9 +2064,9 @@
         "juvenile": {
           "khe": {
             "body": 17.1,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 21.9,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 28.8,
             "underbelly": 15.4
           },
@@ -1898,7 +2076,7 @@
       "pbr": {
         "n": "/assets/dino/pbr/triceratops_n.25c4559c.webp",
         "chi_tiet": "/assets/dino/pbr/chitiet_dinoskindetail_5.91940f6e.webp",
-        "lap": 12.0,
+        "lap": 12,
         "rac": "/assets/dino/pbr/triceratops_rac.91f0c00b.webp"
       }
     },
@@ -1916,7 +2094,7 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Troodon",
@@ -1938,9 +2116,9 @@
         "adult": {
           "khe": {
             "body": 11.1,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 22.3,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 37.1,
             "underbelly": 9.7
           },
@@ -1949,10 +2127,10 @@
         "hatchling": {
           "khe": {
             "body": 26.7,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 4.6,
-            "maleDisplay": 0.0,
-            "markings": 0.0,
+            "maleDisplay": 0,
+            "markings": 0,
             "underbelly": 49.3
           },
           "nen": 19.3
@@ -1960,9 +2138,9 @@
         "juvenile": {
           "khe": {
             "body": 22.3,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 27.3,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 16.7,
             "underbelly": 14.3
           },
@@ -1972,7 +2150,7 @@
       "pbr": {
         "n": "/assets/dino/pbr/troodon_n.297ea06a.webp",
         "chi_tiet": "/assets/dino/pbr/chitiet_dinoskindetail_5.91940f6e.webp",
-        "lap": 12.0,
+        "lap": 12,
         "rac": "/assets/dino/pbr/troodon_rac.c794c6b4.webp"
       }
     },
@@ -1990,7 +2168,7 @@
           ]
         }
       },
-      "scale": 1.0,
+      "scale": 1,
       "yaw": 1.5708,
       "tam": false,
       "nguon": "The Isle SK_Tyrannosaurus",
@@ -2003,7 +2181,7 @@
         "C",
         "M"
       ],
-      "mask_base_pct": 0.0,
+      "mask_base_pct": 0,
       "mask_tuoi": {
         "hatchling": "/assets/dino/tex/tyrannosaurus_hatchling.20260830.8567366b.png",
         "juvenile": "/assets/dino/tex/tyrannosaurus_juvenile.20260830.b5572692.png",
@@ -2013,41 +2191,41 @@
         "adult": {
           "khe": {
             "body": 16.4,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 26.3,
             "maleDisplay": 1.6,
             "markings": 27.9,
             "underbelly": 27.8
           },
-          "nen": 0.0
+          "nen": 0
         },
         "hatchling": {
           "khe": {
             "body": 29.8,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 24.4,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 10.7,
             "underbelly": 35.1
           },
-          "nen": 0.0
+          "nen": 0
         },
         "juvenile": {
           "khe": {
             "body": 20.1,
-            "detail1": 0.0,
+            "detail1": 0,
             "flank": 29.6,
-            "maleDisplay": 0.0,
+            "maleDisplay": 0,
             "markings": 31.1,
             "underbelly": 19.1
           },
-          "nen": 0.0
+          "nen": 0
         }
       },
       "pbr": {
         "n": "/assets/dino/pbr/tyrannosaurus_n.ea1073ef.webp",
         "chi_tiet": "/assets/dino/pbr/chitiet_dinoskindetail_5.91940f6e.webp",
-        "lap": 12.0,
+        "lap": 12,
         "rac": "/assets/dino/pbr/tyrannosaurus_rac.a357185d.webp"
       }
     }
@@ -2070,7 +2248,7 @@
       "file": "/assets/dino/gao/allosaurus.1c891e8d.glb",
       "am": "/assets/dino/gao/allosaurus.d3634a78.mp3",
       "dai": 4.67,
-      "dinh": 1.0,
+      "dinh": 1,
       "dau": [
         0,
         0.9673,
@@ -2213,7 +2391,7 @@
       "file": "/assets/dino/gao/maiasaura.6417ce89.glb",
       "am": "/assets/dino/gao/maiasaura.5aae6e86.mp3",
       "dai": 2.67,
-      "dinh": 1.0,
+      "dinh": 1,
       "dau": [
         0,
         0.9028,
@@ -2257,7 +2435,7 @@
       "file": "/assets/dino/gao/pteranodon.b77e7f67.glb",
       "am": "/assets/dino/gao/pteranodon.49c86420.mp3",
       "dai": 3,
-      "dinh": 1.0,
+      "dinh": 1,
       "dau": [
         0,
         0.6868,

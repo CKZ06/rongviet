@@ -165,7 +165,7 @@ const GHI = (tuyChon && tuyChon.ghi)
 let R = null, SCENE = null, CAM = null, MODEL = null, BONG = null;
 /* Chất lượng cao (xem khối "CHẤT LƯỢNG CAO" đầu file). PMREM + môi trường trung tính (phòng sáng) và
    ảnh/ánh sáng của cảnh nền đang chọn — giữ để `huy()` trả lại GPU. */
-const CHAT_CAO = !!(KHUNG && KHUNG.getAttribute("data-chat") === "cao");
+const CHAT_CAO = !(KHUNG && KHUNG.getAttribute("data-chat") === "thap");
 let PMREM = null, MT_PHONG = null, NEN = null, MT_NEN = null;
 let canhMuon = "";      // cảnh người xem chọn; có thể tới TRƯỚC khi scene dựng xong
 let luotCanh = 0;
@@ -1095,7 +1095,7 @@ async function moXem(d) {
   try {
     trangThai("loading-lib", "Đang tải bộ xem 3D…");
     const m = await layManifest();
-    const slug = (m.loai && m.loai[d.species]) || null;
+    const slug = (m.loai && (m.loai[d.species] || m.loai[d.species?.toLowerCase()] || (d.species?.startsWith("TI") ? m.loai[d.species.slice(2)] : null) || (m.loai[d.species?.split('_')[0]]) || "baryonyx")) || null;
     if (!slug || !m.mohinh || !m.mohinh[slug]) {
       // Nói thật: chưa có mô hình cho loài này. Đừng vẽ đại một con khác rồi để
       // người chơi tưởng đó là con của mình.

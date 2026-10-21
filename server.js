@@ -3,6 +3,8 @@ const session = require('express-session');
 const path = require('path');
 const fs = require('fs');
 const dotenv = require('dotenv');
+const islepilot = require('./services/islepilot');
+const skinStore = require('./services/skinStore');
 
 const webDir = path.join(__dirname, 'dino4vn.com');
 
@@ -202,56 +204,54 @@ app.post('/api/player/logout', (req, res) => {
 });
 
 // ── 5. Các API Quản lý Khủng long, Skin & Gara ─────────────────────────────────
-app.get('/api/player/skin', (req, res) => {
+app.get('/api/player/skin', async (req, res) => {
     if (!req.session?.user?.logged_in) {
         return res.status(401).json({ ok: false, err: 'chua_dang_nhap' });
     }
-    const skinData = req.session.user.skin || {
+    const steamId = req.session.user.steamid;
+    const live = await islepilot.getLivePlayer(steamId);
+    const species = live?.song?.species || 'Spinosaurus';
+    const growth = live?.song?.growth || 1.0;
+    const female = live?.song?.gender === 'female';
+    const savedSkin = skinStore.getSkin(steamId, species) || {};
+
+    res.json({
         ok: true,
-        species: 'Carnotaurus',
-        female: false,
-        growth: 1.0,
-        colors: {},
-        skin: { variation: 0, pattern: 1, theme: 0 }
-    };
-    res.json(skinData);
+        species: species,
+        female: female,
+        growth: growth,
+        colors: savedSkin.colors || {},
+        skin: savedSkin.skin || { variation: 0, pattern: 1, theme: 0 }
+    });
 });
 
-app.post('/api/player/skin', (req, res) => {
+app.post('/api/player/skin', async (req, res) => {
     if (!req.session?.user?.logged_in) {
         return res.status(401).json({ ok: false, err: 'chua_dang_nhap' });
     }
-    if (!req.session.user.skin) {
-        req.session.user.skin = {
-            ok: true,
-            species: req.body.species || 'Carnotaurus',
-            female: false,
-            growth: 1.0,
-            colors: {},
-            skin: { variation: 0, pattern: 1, theme: 0 }
-        };
-    }
-    Object.assign(req.session.user.skin.colors, req.body.colors || req.body);
+    const steamId = req.session.user.steamid;
+    const live = await islepilot.getLivePlayer(steamId);
+    const species = req.body.species || live?.song?.species || 'Spinosaurus';
+
+    skinStore.saveSkin(steamId, species, {
+        colors: req.body.colors || req.body,
+        skin: req.body.skin || {
+            variation: req.body.variation,
+            pattern: req.body.pattern,
+            theme: req.body.theme
+        }
+    });
+
     res.json({ ok: true, message: 'Đã lưu màu skin thành công!' });
 });
 
-app.get('/api/player/garage', (req, res) => {
+app.get('/api/player/garage', async (req, res) => {
     if (!req.session?.user?.logged_in) {
         return res.status(401).json({ ok: false, err: 'chua_dang_nhap' });
     }
-    res.json({
-        ok: true,
-        slots: [
-            {
-                slot: 1,
-                species: 'Carnotaurus',
-                female: false,
-                growth: 1.0,
-                colors: {},
-                skin: { variation: 0, pattern: 1, theme: 0 }
-            }
-        ]
-    });
+    const steamId = req.session.user.steamid;
+    const data = await islepilot.getPlayerGarage(steamId);
+    res.json(data);
 });
 
 app.get('/api/player/skin/quyen', (req, res) => {
@@ -279,45 +279,22 @@ app.get('/api/player/skin/gradient', (req, res) => {
     res.json({ ok: true, bat: false, duoc: true, bo: [] });
 });
 
-app.get('/api/player/live', (req, res) => {
+app.get('/api/player/live', async (req, res) => {
     if (!req.session?.user?.logged_in) {
         return res.status(401).json({ ok: false, err: 'chua_dang_nhap' });
     }
-    res.json({
-        ok: true,
-        song: {
-            in_game: true,
-            species: 'Carnotaurus',
-            gender: 'male',
-            growth: 1.0,
-            health: 1.0,
-            stamina: 1.0,
-            hunger: 0.95,
-            thirst: 0.9,
-            dot_bien: [],
-            prime: 10,
-            prime_dat: 5,
-            prime_eligible: true
-        },
-        caps: {
-            prime_conditions: true
-        }
-    });
+    const steamId = req.session.user.steamid;
+    const data = await islepilot.getLivePlayer(steamId);
+    res.json(data);
 });
 
-app.get('/api/player/map', (req, res) => {
+app.get('/api/player/map', async (req, res) => {
     if (!req.session?.user?.logged_in) {
         return res.status(401).json({ ok: false, err: 'chua_dang_nhap' });
     }
-    res.json({
-        ok: true,
-        in_game: true,
-        lat: -100,
-        lng: 150,
-        age_s: 10,
-        stale: false,
-        tick_s: 15
-    });
+    const steamId = req.session.user.steamid;
+    const data = await islepilot.getPlayerMap(steamId);
+    res.json(data);
 });
 
 // ── 5.1 Các API Ủng hộ / Donate (Techcombank - DANG THI LAM) ──────────────────
@@ -449,6 +426,17 @@ app.use(async (req, res, next) => {
     next();
 });
 
+// ── 6.5 Các API trạng thái Server & Bảng xếp hạng thực tế từ IslePilot ────────
+app.get(['/api/status', '/api/status.json'], async (req, res) => {
+    const data = await islepilot.getRealStatus();
+    res.json(data);
+});
+
+app.get(['/api/bxh', '/api/bang-xep-hang.json'], async (req, res) => {
+    const data = await islepilot.getRealLeaderboard();
+    res.json(data);
+});
+
 // ── 7. Phục vụ các file tĩnh trong dino4vn.com ───────────────────────────────
 app.use(express.static(webDir, { extensions: ['html', 'htm'] }));
 
@@ -457,62 +445,24 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(webDir, 'index.html'));
 });
 
-// ── 8. Tự động đồng bộ số liệu người chơi & BXH từ SequenceMods ────────────────
-async function syncSequenceMods() {
+// ── 8. Tự động đồng bộ số liệu người chơi & BXH thực tế 100% từ IslePilot ─────
+async function syncIslePilotData() {
     try {
-        const headers = { 'User-Agent': 'Mozilla/5.0' };
-        let status_raw = { ok: true, server: 'Rong Viet', online: true };
-        try {
-            const r = await fetch('https://rongviet.sequencemods.com/api/status', { headers, signal: AbortSignal.timeout(6000) });
-            if (r.ok) status_raw = await r.json();
-        } catch (e) {}
-
-        const species_counts = {};
-        try {
-            const r = await fetch('https://rongviet.sequencemods.com/api/killfeed?limit=50', { headers, signal: AbortSignal.timeout(6000) });
-            if (r.ok) {
-                const kf = await r.json();
-                const ignore = new Set(['Deer', 'Boar', 'Rabbit', 'Goat', 'Frog', 'Fish', '']);
-                for (const row of (kf.rows || [])) {
-                    if (row.victim_species && !ignore.has(row.victim_species)) species_counts[row.victim_species] = (species_counts[row.victim_species] || 0) + 1;
-                    if (row.killer_species && !ignore.has(row.killer_species)) species_counts[row.killer_species] = (species_counts[row.killer_species] || 0) + 1;
-                }
-            }
-        } catch (e) {}
-
-        const default_species = { 'Tyrannosaurus': 15, 'Troodon': 10, 'Spino': 9, 'Giga': 6, 'Deinosuchus': 4, 'Triceratops': 4, 'Pteranodon': 3, 'Dilophosaurus': 3, 'Allosaurus': 2, 'Carnotaurus': 2, 'Ceratosaurus': 2, 'Stegosaurus': 1 };
-        const species_live = Object.keys(species_counts).length > 0 ? species_counts : default_species;
-        const top_species = Object.entries(species_live).sort((a, b) => b[1] - a[1]);
-        let calculated_players = Object.values(species_live).reduce((a, b) => a + b, 0);
-        if (calculated_players > 200) calculated_players = 200;
-
-        const status_payload = {
-            ok: true,
-            name: "[VN] Rồng Việt",
-            server: "Rong Viet",
-            server_display: "[VN] Rồng Việt",
-            online: true,
-            players: typeof status_raw.players === 'number' ? status_raw.players : calculated_players,
-            maxPlayers: status_raw.max_players || 200,
-            max_players: status_raw.max_players || 200,
-            queueLength: 0,
-            map: "Gateway",
-            updatedAt: new Date().toISOString(),
-            speciesLive: Object.fromEntries(top_species),
-            top_species: top_species.slice(0, 8).map(s => s[0]),
-            uptime_human: status_raw.uptime_human || "6h 15m",
-            heartbeat_age_seconds: status_raw.heartbeat_age_seconds || 3
-        };
+        const [status_payload, bxh_data] = await Promise.all([
+            islepilot.getRealStatus(),
+            islepilot.getRealLeaderboard()
+        ]);
 
         const destApi = path.join(webDir, 'api');
         fs.mkdirSync(destApi, { recursive: true });
         fs.writeFileSync(path.join(destApi, 'status.json'), JSON.stringify(status_payload, null, 2));
+        fs.writeFileSync(path.join(destApi, 'bang-xep-hang.json'), JSON.stringify(bxh_data, null, 2));
     } catch (err) {
-        // silent
+        console.warn('Sync IslePilot error:', err.message);
     }
 }
-syncSequenceMods();
-setInterval(syncSequenceMods, 30000);
+syncIslePilotData();
+setInterval(syncIslePilotData, 15000);
 
 app.listen(PORT, () => {
     console.log(`=======================================================`);

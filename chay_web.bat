@@ -1,5 +1,5 @@
 @echo off
-title Server Rong Viet - dino4vn
+title Server Rong Viet
 cd /d "%~dp0"
 echo ===================================================
 echo Dang khoi dong Web va dong bo API Rong Viet...
