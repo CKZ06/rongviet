@@ -359,22 +359,9 @@
     if (!mauMoiNhat) return;
 
 
-    if (isSpino && khung3d) {
-      const c = $("gara-3d-canvas");
-      if (c) c.hidden = true;
-      let rImg = khung3d.querySelector(".v3d__render-img");
-      if (!rImg) {
-        rImg = document.createElement("img");
-        rImg.className = "v3d__render-img";
-        rImg.src = "/assets/img/spinosaurus_render.png";
-        rImg.alt = "Spinosaurus (Bản dựng 3D The Isle • Gai lưng & Mắt xanh)";
-        const san = khung3d.querySelector(".v3d__san");
-        if (san) san.appendChild(rImg);
-      }
-      rImg.hidden = false;
-      khung3d.setAttribute("data-state", "ready");
-      chu($("gara-3d-ghi"), "Spinosaurus (Bản dựng 3D chính thức The Isle • Gai lưng & Mắt xanh)");
-    }
+
+
+
     if (!mauMoiNhat) return;
     const d = mauMoiNhat;
     const ky = JSON.stringify([d.species, d.colors || null, d.growth]);
