@@ -42,12 +42,12 @@
     "Triceratops": "triceratops",
     "Troodon": "troodon",
     "Tyrannosaurus": "tyrannosaurus",
-    "Spinosaurus": "baryonyx",
-    "Spino": "baryonyx",
+    "Spinosaurus": "spinosaurus",
+    "Spino": "spinosaurus",
     "Giga": "tyrannosaurus",
     "Giganotosaurus": "tyrannosaurus",
-    "Anky": "stegosaurus",
-    "Ankylosaurus": "stegosaurus",
+    "Anky": "ankylosaurus",
+    "Ankylosaurus": "ankylosaurus",
     "TIAllosaurus": "allosaurus",
     "Allo": "allosaurus",
     "allosaurus": "allosaurus",
@@ -134,16 +134,16 @@
     "T-Rex": "tyrannosaurus",
     "Rex": "tyrannosaurus",
     "tyrannosaurus": "tyrannosaurus",
-    "TISpinosaurus": "baryonyx",
-    "spinosaurus": "baryonyx",
-    "spino": "baryonyx",
+    "TISpinosaurus": "spinosaurus",
+    "spinosaurus": "spinosaurus",
+    "spino": "spinosaurus",
     "Suchomimus": "baryonyx",
     "TISuchomimus": "baryonyx",
     "Sucho": "baryonyx",
     "TIGiganotosaurus": "tyrannosaurus",
     "giga": "tyrannosaurus",
-    "TIAnkylosaurus": "stegosaurus",
-    "anky": "stegosaurus",
+    "TIAnkylosaurus": "ankylosaurus",
+    "anky": "ankylosaurus",
     "Psittacosaurus": "dryosaurus",
     "Psittacosaurus_Base": "dryosaurus",
     "Psittacosaurus_Highlands": "dryosaurus",
@@ -219,7 +219,8 @@
     "TIClamCharacter": "deinosuchus",
     "Seaturtle": "deinosuchus",
     "seaturtle": "deinosuchus",
-    "TISeaturtle": "deinosuchus"
+    "TISeaturtle": "deinosuchus",
+    "ankylosaurus": "ankylosaurus"
   },
   "mohinh": {
     "allosaurus": {
@@ -2228,6 +2229,42 @@
         "lap": 12,
         "rac": "/assets/dino/pbr/tyrannosaurus_rac.a357185d.webp"
       }
+    },
+    "spinosaurus": {
+      "file": "/assets/dino/spinosaurus.glb",
+      "khemau": {
+        "body": {
+          "materials": [
+            "Spinosaurus"
+          ]
+        }
+      },
+      "scale": 1,
+      "yaw": 1.5708,
+      "tam": false,
+      "nguon": "Spinosaurus 3D with dorsal sail",
+      "mode": "flat"
+    },
+    "ankylosaurus": {
+      "file": "/assets/dino/ankylosaurus.glb",
+      "khemau": {
+        "body": {
+          "materials": [
+            "Ankylosaurus"
+          ]
+        },
+        "eyes": {
+          "materials": [
+            "Ankylosaurus_Eye",
+            "Ankylosaurus_Eye_Shine"
+          ]
+        }
+      },
+      "scale": 1,
+      "yaw": 1.5708,
+      "tam": false,
+      "nguon": "Ankylosaurus 3D with armor and tail club",
+      "mode": "flat"
     }
   },
   "layer_khe": {

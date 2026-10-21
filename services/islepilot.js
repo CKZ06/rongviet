@@ -241,6 +241,8 @@ async function getRealStatus() {
     }
 }
 
+const playerSpeciesCache = new Map(); // steamId -> { species, time }
+
 /**
  * 5. Lấy Bảng xếp hạng thực tế & 3D Dinosaur Models cho Bục vinh danh (/api/bang-xep-hang.json)
  */
@@ -249,17 +251,37 @@ async function getRealLeaderboard() {
         const lbData = await fetchIslePilot('/leaderboard');
         const entries = lbData?.entries || [];
 
-        const popularSpecies = ['Spinosaurus', 'Tyrannosaurus', 'Triceratops', 'Carnotaurus', 'Ceratosaurus'];
+        const top20 = entries.slice(0, 20);
 
-        const homNay = entries.slice(0, 20).map((r, idx) => {
+        // Lấy chính xác loài khủng long THẬT trong game của từng người chơi top
+        await Promise.all(top20.map(async (r) => {
+            if (r.species) return;
+            const now = Date.now();
+            const cached = playerSpeciesCache.get(r.steamId);
+            if (cached && (now - cached.time < 600000)) {
+                r.species = cached.species;
+                return;
+            }
+            try {
+                const p = await fetchIslePilot(`/players/${r.steamId}`);
+                if (p && p.species) {
+                    r.species = p.species;
+                    playerSpeciesCache.set(r.steamId, { species: p.species, time: now });
+                }
+            } catch (e) {}
+        }));
+
+        const fallbackList = ['Tyrannosaurus', 'Dilophosaurus', 'Omniraptor', 'Carnotaurus', 'Ceratosaurus', 'Deinosuchus'];
+
+        const homNay = top20.map((r, idx) => {
             const kills = r.kills || 0;
             const deaths = r.deaths || 0;
             const phut = Math.max(45, (kills * 35) + 60 - (deaths * 5));
             const km = Math.round(phut * 0.12 * 10) / 10;
             const score = (kills * 100) + phut;
-            const rawSpecies = r.species || popularSpecies[idx % popularSpecies.length];
+            const rawSpecies = r.species || fallbackList[idx % fallbackList.length];
             const species = skinStore.normalizeSpecies(rawSpecies);
-            const colors = skinStore.getSkin(r.steamId, species)?.colors || skinStore.DEFAULT_SKINS[species] || skinStore.DEFAULT_SKINS['Spinosaurus'];
+            const colors = skinStore.getSkin(r.steamId, species)?.colors || skinStore.DEFAULT_SKINS[species] || skinStore.DEFAULT_SKINS['Tyrannosaurus'];
 
             return {
                 hang: r.rank || (idx + 1),
