@@ -2053,6 +2053,7 @@
     }
   },
   "layer_khe": {
+    "base": "body",
     "B": "flank",
     "C": "body",
     "G": "underbelly",

@@ -1,0 +1,46 @@
+{
+  "76561199805093098": {
+    "quota": 3,
+    "slots": [
+      {
+        "slot": 1,
+        "species": "Stegosaurus",
+        "female": false,
+        "growth": 0.2926,
+        "colors": {
+          "body": "#73226c",
+          "flank": "#210781",
+          "underbelly": "#22aee0",
+          "markings": "#3f065f",
+          "maleDisplay": "#38ee31",
+          "detail1": "#c4d98d",
+          "teeth": "#0ca061",
+          "mouth": "#7ca52e",
+          "claws": "#1c284d",
+          "eyes": "#cadc85",
+          "pattern": "#3f065f"
+        },
+        "skin": {},
+        "vitals": {
+          "health": 100,
+          "stamina": 100,
+          "hunger": 100,
+          "thirst": 100
+        },
+        "vitals_max": {
+          "health": 100,
+          "stamina": 100,
+          "hunger": 100,
+          "thirst": 100
+        },
+        "dot_bien": [],
+        "elder_stacks": 0,
+        "stored_at": 1792676860,
+        "cho_cat": {
+          "ten": "Khu bảo tồn Gateway",
+          "km": 0
+        }
+      }
+    ]
+  }
+}
